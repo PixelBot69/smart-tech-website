@@ -118,9 +118,10 @@ const StatsSection: React.FC = () => {
         </div>
         
         <div className="mt-16 text-center">
+        <a href="tel:+919782730455">
           <button className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-medium rounded-lg hover:shadow-md hover:translate-y-px transition-all duration-300">
             Talk to an Expert
-          </button>
+          </button></a>
         </div>
       </div>
     </section>

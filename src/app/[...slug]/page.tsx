@@ -114,12 +114,11 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
               {service.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+            <a href="tel:+919782730455">
               <Button variant="default" size="lg" className="bg-white text-emerald-600 hover:bg-white/90 font-medium">
                 Get Started <ArrowRightCircle className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-emerald-600 hover:bg-white/10">
-                See Portfolio
-              </Button>
+              </Button></a>
+            
             </div>
           </div>
           
@@ -141,9 +140,10 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
                     </li>
                   ))}
                 </ul>
+                <a href="tel:+919782730455">
                 <Button variant="outline" className="mt-6 border-emerald-600 text-emerald-600 hover:bg-emerald-50 w-full">
                   Schedule a Call
-                </Button>
+                </Button></a>
               </CardContent>
             </Card>
           </div>
@@ -445,12 +445,11 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
               Let's discuss how our services can help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+919782730455">
               <Button variant="default" size="lg" className="bg-white text-emerald-600 hover:bg-white/90 font-medium">
                 Request a Consultation <ArrowRightCircle className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-emerald-600 hover:bg-white/10">
-                View Pricing
-              </Button>
+              </Button></a>
+           
             </div>
           </div>
         </div>
@@ -476,7 +475,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   return {
-    title: `${service.title} | Your Company Name`,
+    title: `${service.title} | gm smart home`,
     description: service.metaDescription || service.description,
 }
 

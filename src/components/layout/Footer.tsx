@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -58,28 +58,13 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="relative w-15 h-8 rounded-md flex items-center justify-center">
-              <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+                <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
               </div>
-              <span className="text-xl font-bold text-white">GM AUTOMATION &
-              SOLUTION</span>
+              <span className="text-xl font-bold text-white">GM AUTOMATION & SOLUTION</span>
             </div>
             <p className="mb-6 text-sm">
               Providing cutting-edge technology solutions for homes and businesses since 2010. We're dedicated to creating smarter, more efficient spaces through innovative technology.
             </p>
-            <div className="flex space-x-4 mb-6">
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
 
           {serviceCategories.map((category, index) => (
@@ -111,15 +96,18 @@ const Footer = () => {
               <MapPin size={20} className="mr-3 text-emerald-500 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-medium text-white mb-1">Our Location</h4>
-                <p className="text-sm">10 11, Jai Ambay Nagar, Opp. Arg 1, Gopalpura Flyover, Jaipur-302015, Rajasthan, India</p>
+                <p className="text-sm">
+                  Prince Palace, Kanha Vihar, Ayodhya Nagar, Plot No.154, Bhura Patel Marg, 
+                  near Gandhi Path West, Vaishali Nagar, Jaipur, Rajasthan 302021
+                </p>
               </div>
             </div>
             <div className="flex items-start">
               <Mail size={20} className="mr-3 text-emerald-500 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-medium text-white mb-1">Email Us</h4>
-                <a href="mailto:info@smarttech.com" className="text-sm hover:text-emerald-500 transition-colors">
-                  info@smarttech.com
+                <a href="mailto:Info@gmautomation.co.in" className="text-sm hover:text-emerald-500 transition-colors">
+                  Info@gmautomation.co.in
                 </a>
               </div>
             </div>
@@ -127,13 +115,13 @@ const Footer = () => {
               <Phone size={20} className="mr-3 text-emerald-500 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-medium text-white mb-1">Call Us</h4>
-                <a href="tel:+9715012345678" className="text-sm hover:text-emerald-500 transition-colors">
-                  +971 50 123 45678
+                <a href="tel:+919782730455" className="text-sm hover:text-emerald-500 transition-colors">
+                  +91 97827 30455
                 </a>
               </div>
             </div>
             <div>
-              <h4 className="font-medium text-white mb-2">Subscribe to Our Newsletter</h4>
+              <h4 className="font-medium text-white mb-2">Have Questions?</h4>
               <div className="flex">
                 <input 
                   type="email" 
@@ -162,7 +150,7 @@ const Footer = () => {
               <Link href="/terms-of-service" className="text-sm hover:text-emerald-500 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/sitemap" className="text-sm hover:text- transition-colors">
+              <Link href="/sitemap" className="text-sm hover:text-emerald-500 transition-colors">
                 Sitemap
               </Link>
             </div>
@@ -174,4 +162,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

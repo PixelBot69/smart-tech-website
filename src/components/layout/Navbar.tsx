@@ -120,7 +120,7 @@ const NavbarComponent = () => {
     },
     { title: "About Us", href: "/about",
         submenu:[{ title: "Contact", href: "/contact" },
-            { title: "Our Projects", href: "/projects" },
+           
             
             ]
 
