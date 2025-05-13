@@ -143,48 +143,43 @@ export default function BenefitsSection() {
         <div className="relative">
           {/* Carousel container with overflow for scrolling */}
           <div 
-            ref={scrollRef}
-            className="overflow-hidden"
+  ref={scrollRef}
+  className="overflow-hidden"
+>
+  <div className="flex w-max">
+    {benefits.map((benefit, index) => (
+      <div 
+        key={benefit.id} 
+        className="flex-shrink-0 px-2"
+        style={{ width: `${100 / visibleItems}vw` }}
+        onMouseEnter={() => setIsHovering(benefit.id)}
+        onMouseLeave={() => setIsHovering(null)}
+      >
+        <motion.div 
+          className={`flex flex-col items-center text-center p-6 mx-2 rounded-lg transition-all duration-300 ${
+            isHovering === benefit.id ? 'transform scale-105' : ''
+          }`}
+          animate={{
+            boxShadow: isHovering === benefit.id 
+              ? '0 0 25px rgba(74, 222, 128, 0.4)' 
+              : '0 0 0 rgba(0, 0, 0, 0)'
+          }}
+        >
+          <motion.div 
+            className="mb-4 text-gray-800"
+            animate={{
+              color: isHovering === benefit.id ? '#10b981' : '#1f2937'
+            }}
           >
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ 
-                width: `${(100 * benefits.length) / visibleItems}%`,
-                transform: `translateX(-${(currentIndex * 100) / benefits.length}%)`
-              }}
-            >
-              {benefits.map((benefit, index) => (
-                <div 
-                  key={benefit.id} 
-                  className="flex-shrink-0"
-                  style={{ width: `${100 / benefits.length}%` }}
-                  onMouseEnter={() => setIsHovering(benefit.id)}
-                  onMouseLeave={() => setIsHovering(null)}
-                >
-                  <motion.div 
-                    className={`flex flex-col items-center text-center p-6 mx-2 rounded-lg transition-all duration-300 ${
-                      isHovering === benefit.id ? 'transform scale-105' : ''
-                    }`}
-                    animate={{
-                      boxShadow: isHovering === benefit.id 
-                        ? '0 0 25px rgba(74, 222, 128, 0.4)' 
-                        : '0 0 0 rgba(0, 0, 0, 0)'
-                    }}
-                  >
-                    <motion.div 
-                      className="mb-4 text-gray-800"
-                      animate={{
-                        color: isHovering === benefit.id ? '#10b981' : '#1f2937'
-                      }}
-                    >
-                      {benefit.icon}
-                    </motion.div>
-                    <h3 className="font-medium text-lg">{benefit.title}</h3>
-                  </motion.div>
-                </div>
-              ))}
-            </div>
-          </div>
+            {benefit.icon}
+          </motion.div>
+          <h3 className="font-medium text-lg">{benefit.title}</h3>
+        </motion.div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
           {/* Navigation arrows with improved positioning and styling */}
           <div className="flex justify-center md:justify-end mt-12 space-x-4">
