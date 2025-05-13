@@ -1,15 +1,19 @@
 
+
 export interface ServiceData {
-    title: string;
-    description: string;
-    content: string;
-    image?: string;
-    features?: string[];
-    metaDescription?: string;
-    relatedServices?: string[];
-    heroBackground?: string;
-  }
-  
+  title: string;
+  description: string;
+  content: string;
+  image?: string;
+  features?: string[];
+  metaDescription?: string;
+  relatedServices?: string[];
+  heroBackground?: string;
+  brandLogos?: {
+    name: string;
+    logo: string;
+  }[];
+}
 
   export type ServicesData = Record<string, ServiceData>;
   
@@ -44,7 +48,14 @@ export interface ServiceData {
     "Ongoing maintenance support"
   ],
   metaDescription: "Professional structured cabling solutions for reliable connectivity in commercial and residential properties by SmartTech.",
-  relatedServices: ["elv-systems/cctv-surveillance", "ict-solutions/wifi-solutions"]
+  relatedServices: ["elv-systems/cctv-surveillance", "ict-solutions/wifi-solutions"],
+  brandLogos: [
+    { name: "Belden", logo: "/brand/be.avif" },
+    { name: "CommScope", logo: "/brand/co.png" },
+    { name: "Panduit", logo: "/brand/pa.avif" },
+    { name: "Legrand", logo: "/brand/le.webp" },
+  ]
+  
 }
 ,
   
@@ -76,7 +87,14 @@ export interface ServiceData {
         "Remote access via mobile devices"
       ],
       metaDescription: "Advanced CCTV surveillance systems with HD cameras, intelligent monitoring, and remote access for enhanced security by SmartTech.",
-      relatedServices: ["elv-systems/access-control", "elv-systems/structured-cabling"]
+      relatedServices: ["elv-systems/access-control", "elv-systems/structured-cabling"],
+      brandLogos: [
+        { name: "Hikvision", logo: "/brand/hi.avif" },
+        { name: "Dahua Technology", logo: "/brand/da.png" },
+        { name: "Axis Communications", logo: "/brand/ax.png" },
+        { name: "Bosch Security Systems", logo: "/brand/bo.png" },
+      ]
+      
     },
   
    "elv-systems/access-control": {
@@ -107,7 +125,13 @@ export interface ServiceData {
     "Integration with CCTV and alarm systems"
   ],
   metaDescription: "Advanced access control systems with biometric, card, and mobile solutions for secure property management by SmartTech.",
-  relatedServices: ["elv-systems/cctv-surveillance", "elv-systems/smart-locks"]
+  relatedServices: ["elv-systems/cctv-surveillance", "elv-systems/smart-locks"],
+  brandLogos: [
+    { name: "Honeywell", logo: "/brand/ho.png" },
+    { name: "Johnson Controls", logo: "/brand/jo.png" },
+    { name: "Schlage", logo: "/brand/sc.png" },
+    { name: "Assa Abloy", logo: "/brand/as.png" },
+  ]
 }
 ,
   
@@ -139,7 +163,13 @@ export interface ServiceData {
         "Comprehensive reporting capabilities"
       ],
       metaDescription: "Smart parking management systems with automation, license plate recognition, and space optimization for commercial and residential properties by SmartTech.",
-      relatedServices: ["elv-systems/access-control", "bms/intelligent-building"]
+      relatedServices: ["elv-systems/access-control", "bms/intelligent-building"],
+      brandLogos: [
+        { name: "SKIDATA", logo: "/brand/sk.png" },
+  { name: "Parkmobile", logo: "/brand/pa.png" },
+  { name: "TIBA Parking Systems", logo: "/brand/ti.png" },
+  { name: "Scheidt & Bachmann", logo: "/brand/sb.jpeg" },
+      ]
     },
   
     "elv-systems/smatv-iptv": {
@@ -170,7 +200,13 @@ export interface ServiceData {
         "Integration with building management systems"
       ],
       metaDescription: "Advanced SMATV and IPTV systems for multi-dwelling units with high-definition content distribution and interactive features by SmartTech.",
-      relatedServices: ["home-cinema/cinema-audio-video", "elv-systems/structured-cabling"]
+      relatedServices: ["home-cinema/cinema-audio-video", "elv-systems/structured-cabling"],
+      brandLogos: [
+        { name: "Zinwell", logo: "/brand/zi.png" },
+  { name: "Triax", logo: "/brand/tr.png" },
+  { name: "Amino Communications", logo: "/brand/am.webp" },
+  { name: "VITEC", logo: "/brand/vi.png" },
+      ]
     },
   
     "elv-systems/audio-video-intercom": {
@@ -201,7 +237,13 @@ export interface ServiceData {
         "Integration with other security systems"
       ],
       metaDescription: "Advanced audio and video intercom systems with HD video, mobile access, and integration capabilities for residential and commercial properties by SmartTech.",
-      relatedServices: ["elv-systems/access-control", "elv-systems/cctv-surveillance"]
+      relatedServices: ["elv-systems/access-control", "elv-systems/cctv-surveillance"],
+      brandLogos: [
+        { name: "Aiphone", logo: "/brand/ai.png" },
+        { name: "TCS", logo: "/brand/tcs.avif" },
+        { name: "2N", logo: "/brand/2n.png" },
+        { name: "Fermax", logo: "/brand/fe.png" },
+      ]
     },
   
     "elv-systems/smart-locks": {
@@ -232,7 +274,13 @@ export interface ServiceData {
         "Remote lock/unlock capabilities"
       ],
       metaDescription: "Advanced smart lock solutions with biometric, PIN code, and mobile access for enhanced security and convenience by SmartTech.",
-      relatedServices: ["elv-systems/access-control", "home-automation/smart-city-systems"]
+      relatedServices: ["elv-systems/access-control", "home-automation/smart-city-systems"],
+      brandLogos: [
+        { name: "August Home", logo: "/brand/au.png" },
+  { name: "Yale", logo: "/brand/ya.png" },
+  { name: "Kwikset", logo: "/brand/kw.png" },
+  { name: "Schlage", logo: "/brand/sc.png" },
+      ]
     },
   
     "elv-systems/public-address-systems": {
@@ -263,7 +311,13 @@ export interface ServiceData {
         "Integration with building management systems"
       ],
       metaDescription: "Professional public address systems with zone-based management and emergency capabilities for commercial and public spaces by SmartTech.",
-      relatedServices: ["elv-systems/structured-cabling", "home-automation/music-control"]
+      relatedServices: ["elv-systems/structured-cabling", "home-automation/music-control"],
+      brandLogos: [
+        { name: "Bose Professional", logo: "/brand/bos.png" },
+        { name: "JBL Professional", logo: "/brand/jb.png" },
+        { name: "TOA Corporation", logo: "/brand/to.png" },
+        { name: "Electro-Voice", logo: "/brand/ev.png" },
+      ]
     },
   
     // ICT Solutions
@@ -295,7 +349,13 @@ export interface ServiceData {
         "Scalable for growing needs"
       ],
       metaDescription: "Enterprise-grade Wi-Fi solutions for reliable wireless connectivity in commercial and residential spaces by SmartTech.",
-      relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"]
+      relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"],
+      brandLogos: [
+        { name: "Cisco", logo: "/brand/ci.png" },
+  { name: "Aruba Networks", logo: "/brand/ar.png" },
+  { name: "Ubiquiti Networks", logo: "/brand/ub.png" },
+  { name: "TP-Link", logo: "/brand/tp.png" },
+      ]
     },
   
     "ict-solutions/it-server-solutions": {
@@ -326,7 +386,13 @@ export interface ServiceData {
         "Ongoing technical support"
       ],
       metaDescription: "Comprehensive IT and server solutions with cloud integration, virtualization, and security features for business operations by SmartTech.",
-      relatedServices: ["ict-solutions/wifi-solutions", "elv-systems/structured-cabling"]
+      relatedServices: ["ict-solutions/wifi-solutions", "elv-systems/structured-cabling"],
+      brandLogos: [
+        { name: "Dell Technologies", logo: "/brand/de.png" },
+        { name: "Hewlett Packard Enterprise", logo: "/brand/he.png" },
+        { name: "IBM", logo: "/brand/ib.png" },
+        { name: "Lenovo", logo: "/brand/le.png" },
+      ]
     },
   
     "ict-solutions/telephone-pabx": {
@@ -357,7 +423,12 @@ export interface ServiceData {
         "Comprehensive technical support"
       ],
       metaDescription: "Modern telephone and PABX systems with IP-based solutions and unified communications for efficient business operations by SmartTech.",
-      relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"]
+      relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"],
+      brandLogos: [
+        { name: "Avaya", logo: "/brand/av.avif" },
+        { name: "Mitel", logo: "/brand/mi.webp" },
+        { name: "ShoreTel", logo: "/brand/sh.png" },
+      ]
     },
   
     "ict-solutions/solar-systems": {
@@ -388,7 +459,14 @@ export interface ServiceData {
         "Integration with home automation"
       ],
       metaDescription: "Custom solar energy systems for sustainable power generation in residential and commercial properties by SmartTech.",
-      relatedServices: ["home-automation/self-powered-homes", "bms/intelligent-building"]
+      relatedServices: ["home-automation/self-powered-homes", "bms/intelligent-building"],
+      brandLogos: [
+    
+  { name: "Sungrow", logo: "/brand/su.png" },
+  { name: "Trina Solar", logo: "/brand/tri.png" },
+  { name: "First Solar", logo: "/brand/di.png" },
+  { name: "JA Solar", logo: "/brand/ja.png" },
+      ]
     },
   
     // Home Cinema
@@ -420,7 +498,14 @@ export interface ServiceData {
         "Aesthetically integrated design"
       ],
       metaDescription: "Custom acoustic room solutions with professional sound treatment and isolation for optimal audio experiences by SmartTech.",
-      relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/led-walls-screens"]
+      relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/led-walls-screens"],
+      brandLogos: [
+        { name: "Bose", logo: "/brand/bo.png" },
+        { name: "Klipsch", logo: "/brand/kl.png" },
+        { name: "Sonos", logo: "/brand/so.png" },
+        { name: "MartinLogan", logo: "/brand/ma.png" },
+      ]
+      
     },
   
     "home-cinema/led-walls-screens": {
@@ -451,7 +536,14 @@ export interface ServiceData {
         "Professional calibration"
       ],
       metaDescription: "Premium LED walls and screens with 4K resolution and custom configurations for home theaters and commercial spaces by SmartTech.",
-      relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/acoustic-rooms"]
+      relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/acoustic-rooms"],
+      brandLogos: [
+        { name: "Samsung", logo: "/brand/sa.svg" },
+        { name: "LG Electronics", logo: "/brand/lg.png" },
+        { name: "Barco", logo: "/brand/ba.png" },
+        { name: "Daktronics", logo: "/brand/dak.png" },
+      ]
+      
     },
   
     "home-cinema/cinema-audio-video": {
@@ -482,7 +574,14 @@ export interface ServiceData {
         "Intuitive control interfaces"
       ],
       metaDescription: "Professional cinema audio and video systems with surround sound and 4K projection for immersive home entertainment by SmartTech.",
-      relatedServices: ["home-cinema/acoustic-rooms", "home-cinema/cinema-automation"]
+      relatedServices: ["home-cinema/acoustic-rooms", "home-cinema/cinema-automation"],
+      brandLogos: [
+        { name: "JBL Professional", logo: "/brand/jb.png" },
+        { name: "Sony", logo: "/brand/so.png" },
+        { name: "Denon", logo: "/brand/de.png" },
+        { name: "Marantz", logo: "/brand/ma.png" },
+      ]
+      
     },
   
     "home-cinema/cinema-automation": {
@@ -513,7 +612,13 @@ export interface ServiceData {
         "Seamless equipment integration"
       ],
       metaDescription: "Intelligent cinema automation systems with one-touch operation and integrated control for enhanced home theater experiences by SmartTech.",
-      relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"]
+      relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"],
+      brandLogos: [
+        { name: "Control4", logo: "/brand/co.png" },
+        { name: "Savant", logo: "/brand/sa.png" },
+        { name: "Crestron", logo: "/brand/cr.png" },
+        { name: "Lutron", logo: "/brand/lu.png" },
+      ]
     },
   
     "home-cinema/cinema-seating": {
@@ -545,6 +650,13 @@ export interface ServiceData {
       ],
       metaDescription: "Luxury cinema seating solutions with custom configurations and premium comfort features for home theaters by SmartTech.",
       relatedServices: ["home-cinema/acoustic-rooms", "home-cinema/cinema-automation"],
+      brandLogos: [
+        { name: "Octane Seating", logo: "/brand/oc.jpg" },
+        { name: "Seatcraft", logo: "/brand/se.png" },
+        { name: "Palliser", logo: "/brand/pal.png" },
+        { name: "Craftmaster", logo: "/brand/cr.jpeg" },
+      ]
+      
   
     },
   
@@ -576,7 +688,14 @@ export interface ServiceData {
         "Atmospheric lighting effects"
       ],
       metaDescription: "Custom game room solutions with optimized displays, immersive audio, and specialized design for enhanced gaming experiences by SmartTech.",
-      relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"]
+      relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"],
+      brandLogos: [
+        { name: "Razer", logo: "/brand/ra.jpg" },
+        { name: "Alienware", logo: "/brand/al.png" },
+        { name: "Logitech", logo: "/brand/lo.png" },
+        { name: "Corsair", logo: "/brand/co.png" },
+      ]
+      
     },
   
     // Home Automation
@@ -608,7 +727,14 @@ export interface ServiceData {
         "Integration with voice assistants"
       ],
       metaDescription: "Intelligent lighting control systems with customized scenes and automation for enhanced ambiance and efficiency by SmartTech.",
-      relatedServices: ["home-automation/smart-city-systems", "home-cinema/cinema-automation"]
+      relatedServices: ["home-automation/smart-city-systems", "home-cinema/cinema-automation"],
+      brandLogos: [
+        { name: "Lutron", logo: "/brand/lu.png" },
+        { name: "Philips Hue", logo: "/brand/ph.webp" },
+        { name: "Legrand", logo: "/brand/le.png" },
+        { name: "Crestron", logo: "/brand/cr.png" },
+      
+      ]
     },
   
     "home-automation/curtain-control": {
@@ -639,7 +765,12 @@ export interface ServiceData {
         "Battery and hardwired options"
       ],
       metaDescription: "Automated curtain and shade control systems with scheduling and smart home integration for enhanced convenience and efficiency by SmartTech.",
-      relatedServices: ["home-automation/lighting-control", "home-automation/hvac-control"]
+      relatedServices: ["home-automation/lighting-control", "home-automation/hvac-control"],
+      brandLogos: [
+        { name: "Somfy", logo: "/brand/so.png" },
+        { name: "Hunter Douglas", logo: "/brand/hu.png" },
+        { name: "QMotion", logo: "/brand/qm.png" },
+      ]
     },
   
     "home-automation/hvac-control": {
@@ -670,7 +801,13 @@ export interface ServiceData {
       "Integration with other smart systems"
     ],
     metaDescription: "Smart HVAC control systems with zone-based management and energy optimization for enhanced comfort and efficiency by SmartTech.",
-    relatedServices: ["home-automation/lighting-control", "bms/air-quality-control"]
+    relatedServices: ["home-automation/lighting-control", "bms/air-quality-control"],
+    brandLogos: [
+      { name: "Nest", logo: "/brand/ne.jpg" },
+      { name: "Honeywell", logo: "/brand/ho.png" },
+      { name: "Ecobee", logo: "/brand/ec.png" },
+      { name: "Trane", logo: "/brand/tr.png" },
+    ]
   },
 
   "home-automation/music-control": {
@@ -701,7 +838,13 @@ export interface ServiceData {
       "Custom zone configuration"
     ],
     metaDescription: "Advanced multi-room audio systems with high-fidelity sound and intuitive control for seamless music distribution by SmartTech.",
-    relatedServices: ["home-cinema/cinema-audio-video", "home-automation/smart-city-systems"]
+    relatedServices: ["home-cinema/cinema-audio-video", "home-automation/smart-city-systems"],
+    brandLogos: [
+      { name: "Sonos", logo: "/brand/so.png" },
+      { name: "Bose", logo: "/brand/bo.png" },
+      { name: "Bang & Olufsen", logo: "/brand/ba.png" },
+      { name: "Yamaha", logo: "/brand/ya.png" },
+    ]
   },
 
   "home-automation/smart-city-systems": {
@@ -732,7 +875,14 @@ export interface ServiceData {
       "Improved quality of life"
     ],
     metaDescription: "Integrated smart city and community systems with connected technologies for enhanced urban living and sustainability by SmartTech.",
-    relatedServices: ["home-automation/self-powered-homes", "bms/internet-of-things"]
+    relatedServices: ["home-automation/self-powered-homes", "bms/internet-of-things"],
+    brandLogos: [
+
+      { name: "Vivint", logo: "/brand/vi.png" },
+      { name: "Tesla", logo: "/brand/te.jpg" },
+      { name: "Sonnen", logo: "/brand/so.png" },
+      { name: "Ecolution", logo: "/brand/ec.png" },
+    ]
   },
 
   "home-automation/self-powered-homes": {
@@ -763,7 +913,13 @@ export interface ServiceData {
       "Real-time energy monitoring"
     ],
     metaDescription: "Comprehensive self-powered smart home solutions with renewable energy and intelligent automation for sustainable living by SmartTech.",
-    relatedServices: ["ict-solutions/solar-systems", "home-automation/hvac-control"]
+    relatedServices: ["ict-solutions/solar-systems", "home-automation/hvac-control"],
+    brandLogos: [
+      { name: "Belden", logo: "/brand/be.avif" },
+      { name: "CommScope", logo: "/brand/co.png" },
+      { name: "Panduit", logo: "/brand/pa.avif" },
+      { name: "Legrand", logo: "/brand/le.webp" },
+    ]
   },
 
   // BMS
@@ -795,7 +951,13 @@ export interface ServiceData {
       "Data-driven optimization"
     ],
     metaDescription: "Advanced intelligent building systems with integrated management and optimization for enhanced operational efficiency by SmartTech.",
-    relatedServices: ["bms/integrated-services", "bms/internet-of-things"]
+    relatedServices: ["bms/integrated-services", "bms/internet-of-things"],
+    brandLogos: [
+      { name: "Honeywell", logo: "/brand/ho.png" },
+      { name: "Siemens", logo: "/brand/si.png" },
+      { name: "Schneider Electric", logo: "/brand/sc.png" },
+      { name: "Johnson Controls", logo: "/brand/jo.png" },
+    ]
   },
 
   "bms/integrated-services": {
@@ -826,7 +988,13 @@ export interface ServiceData {
       "Comprehensive data insights"
     ],
     metaDescription: "Unified building management solutions with cross-system integration for enhanced efficiency and simplified operations by SmartTech.",
-    relatedServices: ["bms/intelligent-building", "bms/internet-of-things"]
+    relatedServices: ["bms/intelligent-building", "bms/internet-of-things"],
+    brandLogos: [
+      { name: "Trane", logo: "/brand/tr.png" },
+      { name: "Carrier", logo: "/brand/ca.png" },
+      { name: "Honeywell", logo: "/brand/ho.png" },
+      { name: "Siemens", logo: "/brand/si.png" },
+    ]
   },
 
   "bms/air-quality-control": {
@@ -857,7 +1025,12 @@ export interface ServiceData {
       "Energy-efficient operation"
     ],
     metaDescription: "Advanced air quality control systems with real-time monitoring and automated management for healthier indoor environments by SmartTech.",
-    relatedServices: ["home-automation/hvac-control", "bms/intelligent-building"]
+    relatedServices: ["home-automation/hvac-control", "bms/intelligent-building"],
+    brandLogos: [
+      { name: "Dyson", logo: "/brand/dy.png" },
+      { name: "Honeywell", logo: "/brand/ho.png" },
+      { name: "Blueair", logo: "/brand/bl.png" },
+      { name: "Sharp", logo: "/brand/sh.png" },]
   },
 
   "bms/btu-metering": {
@@ -888,7 +1061,8 @@ export interface ServiceData {
       "Optimization opportunity identification"
     ],
     metaDescription: "Accurate BTU metering systems for thermal energy measurement and management in commercial and residential properties by SmartTech.",
-    relatedServices: ["bms/intelligent-building", "home-automation/hvac-control"]
+    relatedServices: ["bms/intelligent-building", "home-automation/hvac-control"],
+    
   },
 
   "bms/internet-of-things": {
@@ -919,7 +1093,13 @@ export interface ServiceData {
       "Scalable IoT architecture"
     ],
     metaDescription: "Advanced Internet of Things (IoT) solutions with connected devices and intelligent automation for data-driven operations by SmartTech.",
-    relatedServices: ["bms/intelligent-building", "home-automation/smart-city-systems"]
+    relatedServices: ["bms/intelligent-building", "home-automation/smart-city-systems"],
+    brandLogos: [
+      { name: "Cisco", logo: "/brand/ci.png" },
+      { name: "GE Digital", logo: "/brand/ge.png" },
+      { name: "Samsung SmartThings", logo: "/brand/sa.png" },
+      { name: "Amazon Web Services", logo: "/brand/am.jpeg" }
+    ]
   }
 };
 export function getServiceBySlug(slug: string[]): ServiceData | null {

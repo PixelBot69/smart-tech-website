@@ -107,7 +107,11 @@ const HeroSlider: React.FC = () => {
                       <div className="w-full md:w-1/2 bg-emerald-700/60 backdrop-blur-sm p-6 sm:p-8 rounded-lg shadow-lg text-center md:text-left">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{slide.title}</h1>
                         <p className="text-base sm:text-lg mb-6 sm:mb-8 text-emerald-100">{slide.description}</p>
-                        <a href="tel:+919782730455">
+                        <a
+  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <Button className="bg-white text-emerald-700 hover:bg-emerald-100">
     Book a Demo
   </Button>

@@ -2,14 +2,14 @@ import { notFound } from 'next/navigation';
 import { getServiceBySlug } from '@/content/service';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle,  } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import type { Metadata, ResolvingMetadata } from 'next'
-import type { NextPage } from 'next'
+import type { Metadata,  } from 'next'
+
 import { 
   CheckCircle, 
   ArrowRight, 
-  ExternalLink, 
+
   ChevronRight, 
   Star, 
   ArrowRightCircle,
@@ -114,7 +114,11 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
               {service.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+919782730455">
+            <a
+  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+  target="_blank"
+  rel="noopener noreferrer"
+>
               <Button variant="default" size="lg" className="bg-white text-emerald-600 hover:bg-white/90 font-medium">
                 Get Started <ArrowRightCircle className="ml-2 h-5 w-5" />
               </Button></a>
@@ -140,7 +144,11 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
                     </li>
                   ))}
                 </ul>
-                <a href="tel:+919782730455">
+                <a
+  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+  target="_blank"
+  rel="noopener noreferrer"
+>
                 <Button variant="outline" className="mt-6 border-emerald-600 text-emerald-600 hover:bg-emerald-50 w-full">
                   Schedule a Call
                 </Button></a>
@@ -237,6 +245,37 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
             )}
           </div>
         </div>
+        {service.brandLogos && service.brandLogos.length > 0 && (
+          <div className="mb-20">
+            <div className="text-center mb-8">
+              <Badge className="bg-emerald-100 text-emerald-700 mb-2">Trusted Partners</Badge>
+              <h2 className="text-2xl font-bold text-gray-800">Brands That Trust Our Services</h2>
+              <div className="w-16 h-1 bg-emerald-600 mx-auto my-4"></div>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+      {service.brandLogos.map((brand, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-xs flex items-center justify-center h-32"
+        >
+          <div className="flex flex-col items-center justify-center w-full">
+            <div className="h-16 flex items-center justify-center">
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                width={160}
+                height={80}
+                className="object-contain max-h-full max-w-full mx-auto grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <p className="text-center text-gray-600 text-sm mt-4">{brand.name}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+          </div>
+        )}
         
         {/* Our Process Section - New Addition */}
         <div className="mb-24">
@@ -317,6 +356,7 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
           </div>
         )}
         
+        
         {/* Testimonial Section with improved styling */}
         <div className="mb-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl"></div>
@@ -365,11 +405,7 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
               ))}
             </div>
             
-            <div className="text-center mt-12">
-              <Button variant="outline" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50">
-                Read More Success Stories
-              </Button>
-            </div>
+          
           </div>
         </div>
         
@@ -445,7 +481,11 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
               Let's discuss how our services can help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919782730455">
+            <a
+  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+  target="_blank"
+  rel="noopener noreferrer"
+>
               <Button variant="default" size="lg" className="bg-white text-emerald-600 hover:bg-white/90 font-medium">
                 Request a Consultation <ArrowRightCircle className="ml-2 h-5 w-5" />
               </Button></a>
@@ -454,6 +494,7 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

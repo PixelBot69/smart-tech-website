@@ -118,7 +118,11 @@ const StatsSection: React.FC = () => {
         </div>
         
         <div className="mt-16 text-center">
-        <a href="tel:+919782730455">
+        <a
+  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+  target="_blank"
+  rel="noopener noreferrer"
+>
           <button className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-medium rounded-lg hover:shadow-md hover:translate-y-px transition-all duration-300">
             Talk to an Expert
           </button></a>
