@@ -79,7 +79,7 @@ const NavbarComponent = () => {
       submenu: [
         { title: "Wi-Fi Solutions", href: "/ict-solutions/wifi-solutions" },
         { title: "IT & Server Solutions", href: "/ict-solutions/it-server-solutions" },
-        { title: "Telephone & PABX", href: "/ict-solutions/telephone-pabx" },
+        { title: "Telephone & PABX", href: "/ict-solutions/tele" },
         { title: "Solar Systems", href: "/ict-solutions/solar-systems" }
       ]
     },
@@ -87,12 +87,12 @@ const NavbarComponent = () => {
       title: "Home Cinema",
       href: "/home-cinema",
       submenu: [
-        { title: "Acoustic Rooms", href: "/home-cinema/acoustic-rooms" },
-        { title: "LED Walls/Screens", href: "/home-cinema/led-walls-screens" },
-        { title: "Cinema Audio/Video", href: "/home-cinema/cinema-audio-video" },
-        { title: "Cinema Automation", href: "/home-cinema/cinema-automation" },
+        { title: "Acoustic Rooms", href: "/home-cinema/acoutic" },
+        { title: "LED Walls/Screens", href: "/home-cinema/led-wall" },
+        { title: "Cinema Audio/Video", href: "/home-cinema/cinema-audio" },
+        { title: "Cinema Automation", href: "/home-cinema/Cinema-automation" },
         { title: "Cinema Seating", href: "/home-cinema/cinema-seating" },
-        { title: "Game Rooms", href: "/home-cinema/game-rooms" }
+        { title: "Game Rooms", href: "/home-cinema/game" }
       ]
     },
     {

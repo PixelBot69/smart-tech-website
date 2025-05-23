@@ -339,8 +339,8 @@ export interface ServiceData {
         
         <p>Whether you need coverage for a small office or a large commercial space, our Wi-Fi solutions provide consistent performance and eliminate dead zones. We use the latest wireless technologies to ensure optimal speed, reliability, and security for all your connected devices.</p>
       `,
-      image: "/ict-solution/wifi-solutions/wi.webp",
-      heroBackground: "/ict-solution/wifi-solutions/wifi-hero.jpeg",
+      image: "/ict-solutions/wifi-solutions/wi.webp",
+      heroBackground: "/ict-solutions/wifi-solutions/wifi-hero.jpeg",
       features: [
         "High-speed wireless connectivity",
         "Comprehensive coverage without dead zones",
@@ -376,8 +376,8 @@ export interface ServiceData {
         
         <p>We take a consultative approach to understand your business requirements before recommending appropriate solutions. Our team handles everything from initial planning to implementation and provides ongoing support to ensure your IT infrastructure operates at peak efficiency.</p>
       `,
-      image: "/ict-solution/it-server-solutions/it.jpg",
-      heroBackground: "/ict-solution/it-server-solutions/it-hero.jpg",
+      image: "/ict-solutions/it-server-solutions/it.jpg",
+      heroBackground: "/ict-solutions/it-server-solutions/it-hero.jpg",
       features: [
         "Customized server architecture",
         "Scalable infrastructure design",
@@ -395,7 +395,7 @@ export interface ServiceData {
       ]
     },
   
-    "ict-solutions/telephone": {
+    "ict-solutions/tele": {
       title: "Telephone & PABX",
       description: "Advanced telephony systems for efficient business communication.",
       content: `
@@ -413,8 +413,8 @@ export interface ServiceData {
         
         <p>We design and implement telephony systems that scale with your business needs and integrate with your existing IT infrastructure. Our solutions optimize communication efficiency, reduce costs, and provide the flexibility to adapt to changing business requirements.</p>
       `,
-      image: "/ict-solution/telephone/te.webp",
-  heroBackground: "/ict-solution/telephone/te-hero.jpg",
+      image: "/ict-solution/tele/te.webp",
+  heroBackground: "/ict-solution/tele/te-hero.jpg",
       features: [
         "Cost-effective communication",
         "Scalable telephony architecture",
@@ -470,7 +470,7 @@ export interface ServiceData {
     },
   
     // Home Cinema
-    "home-cinema/acoustic": {
+    "home-cinema/acoutic": {
       title: "Acoustic Rooms",
       description: "Professionally designed spaces with optimal acoustic properties for immersive audio experiences.",
       content: `
