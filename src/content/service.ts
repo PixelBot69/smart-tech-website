@@ -413,8 +413,8 @@ export interface ServiceData {
         
         <p>We design and implement telephony systems that scale with your business needs and integrate with your existing IT infrastructure. Our solutions optimize communication efficiency, reduce costs, and provide the flexibility to adapt to changing business requirements.</p>
       `,
-      image: "/ict-solution/tele/te.webp",
-  heroBackground: "/ict-solution/tele/te-hero.jpg",
+      image: "/ict-solutions/tele/te.webp",
+  heroBackground: "/ict-solutions/tele/te-hero.jpg",
       features: [
         "Cost-effective communication",
         "Scalable telephony architecture",
@@ -449,8 +449,8 @@ export interface ServiceData {
         
         <p>We handle every aspect of your solar installation, from initial assessment to permitting, installation, and final inspection. Our solutions integrate seamlessly with your existing electrical systems and can be expanded as your energy needs grow.</p>
       `,
-      image: "/ict-solution/solar-systems/so.webp",
-  heroBackground: "/ict-solution/solar-systems/so-hero.jpg",
+      image: "/ict-solutions/solar-systems/so.webp",
+  heroBackground: "/ict-solutions/solar-systems/so-hero.jpg",
       features: [
         "Reduced energy costs",
         "Sustainable power generation",
