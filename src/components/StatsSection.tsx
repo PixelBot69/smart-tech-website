@@ -88,7 +88,7 @@ const StatsSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-emerald-50">
-            Smart Home Excellence
+           SMART HOME Excellence
           </h2>
           <p className="text-emerald-100 max-w-2xl mx-auto">
             Transforming homes with cutting-edge automation solutions

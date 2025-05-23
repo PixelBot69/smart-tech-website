@@ -24,7 +24,7 @@ export interface ServiceData {
   title: "Structured Cabling",
   description: "Professional structured cabling solutions for modern connectivity needs.",
   content: `
-    <p>SmartTech provides comprehensive structured cabling solutions designed to meet the evolving needs of businesses and residential properties. Our expert team designs and implements reliable infrastructure that supports your current and future connectivity requirements.</p>
+    <p>GM provides comprehensive structured cabling solutions designed to meet the evolving needs of businesses and residential properties. Our expert team designs and implements reliable infrastructure that supports your current and future connectivity requirements.</p>
     
     <h3>Our Structured Cabling Services Include:</h3>
     <ul>
@@ -47,7 +47,7 @@ export interface ServiceData {
     "Comprehensive testing and documentation",
     "Ongoing maintenance support"
   ],
-  metaDescription: "Professional structured cabling solutions for reliable connectivity in commercial and residential properties by SmartTech.",
+  metaDescription: "Professional structured cabling solutions for reliable connectivity in commercial and residential properties by GM.",
   relatedServices: ["elv-systems/cctv-surveillance", "ict-solutions/wifi-solutions"],
   brandLogos: [
     { name: "Belden", logo: "/brand/be.avif" },
@@ -63,7 +63,7 @@ export interface ServiceData {
       title: "CCTV Surveillance",
       description: "Advanced security camera systems for comprehensive monitoring and protection.",
       content: `
-        <p>SmartTech offers state-of-the-art CCTV surveillance systems designed to enhance security and provide peace of mind. Our solutions combine high-definition cameras, intelligent software, and secure storage to create comprehensive monitoring systems.</p>
+        <p>GM offers state-of-the-art CCTV surveillance systems designed to enhance security and provide peace of mind. Our solutions combine high-definition cameras, intelligent software, and secure storage to create comprehensive monitoring systems.</p>
         
         <h3>Our CCTV Surveillance Solutions Include:</h3>
         <ul>
@@ -86,7 +86,7 @@ export interface ServiceData {
         "Secure data storage",
         "Remote access via mobile devices"
       ],
-      metaDescription: "Advanced CCTV surveillance systems with HD cameras, intelligent monitoring, and remote access for enhanced security by SmartTech.",
+      metaDescription: "Advanced CCTV surveillance systems with HD cameras, intelligent monitoring, and remote access for enhanced security by GM.",
       relatedServices: ["elv-systems/access-control", "elv-systems/structured-cabling"],
       brandLogos: [
         { name: "Hikvision", logo: "/brand/hi.avif" },
@@ -101,7 +101,7 @@ export interface ServiceData {
   title: "Access Control",
   description: "Secure and intelligent access management systems for property protection.",
   content: `
-    <p>SmartTech delivers comprehensive access control solutions that enhance security while providing convenient entry for authorized personnel. Our systems combine modern hardware with intelligent software to create secure yet user-friendly access management.</p>
+    <p>GM delivers comprehensive access control solutions that enhance security while providing convenient entry for authorized personnel. Our systems combine modern hardware with intelligent software to create secure yet user-friendly access management.</p>
     
     <h3>Our Access Control Solutions Include:</h3>
     <ul>
@@ -124,7 +124,7 @@ export interface ServiceData {
     "Scalable for growing facilities",
     "Integration with CCTV and alarm systems"
   ],
-  metaDescription: "Advanced access control systems with biometric, card, and mobile solutions for secure property management by SmartTech.",
+  metaDescription: "Advanced access control systems with biometric, card, and mobile solutions for secure property management by GM.",
   relatedServices: ["elv-systems/cctv-surveillance", "elv-systems/smart-locks"],
   brandLogos: [
     { name: "Honeywell", logo: "/brand/ho.png" },
@@ -139,7 +139,7 @@ export interface ServiceData {
       title: "Parking Management",
       description: "Intelligent parking solutions for efficient space utilization and enhanced security.",
       content: `
-        <p>SmartTech offers advanced parking management systems designed to optimize space utilization, enhance security, and improve the overall parking experience. Our solutions use the latest technologies to automate and streamline parking operations.</p>
+        <p>GM offers advanced parking management systems designed to optimize space utilization, enhance security, and improve the overall parking experience. Our solutions use the latest technologies to automate and streamline parking operations.</p>
         
         <h3>Our Parking Management Solutions Include:</h3>
         <ul>
@@ -162,7 +162,7 @@ export interface ServiceData {
         "Enhanced security and surveillance",
         "Comprehensive reporting capabilities"
       ],
-      metaDescription: "Smart parking management systems with automation, license plate recognition, and space optimization for commercial and residential properties by SmartTech.",
+      metaDescription: "Smart parking management systems with automation, license plate recognition, and space optimization for commercial and residential properties by GM.",
       relatedServices: ["elv-systems/access-control", "bms/intelligent-building"],
       brandLogos: [
         { name: "SKIDATA", logo: "/brand/sk.png" },
@@ -176,7 +176,7 @@ export interface ServiceData {
       title: "SMATV / IPTV",
       description: "High-quality satellite and IP television distribution systems for multi-dwelling units.",
       content: `
-        <p>SmartTech provides cutting-edge SMATV (Satellite Master Antenna Television) and IPTV solutions for residential complexes, hotels, and commercial buildings. Our systems deliver crystal-clear television signals and rich multimedia content to multiple users simultaneously.</p>
+        <p>GM provides cutting-edge SMATV (Satellite Master Antenna Television) and IPTV solutions for residential complexes, hotels, and commercial buildings. Our systems deliver crystal-clear television signals and rich multimedia content to multiple users simultaneously.</p>
         
         <h3>Our SMATV/IPTV Solutions Include:</h3>
         <ul>
@@ -199,7 +199,7 @@ export interface ServiceData {
         "Scalable architecture",
         "Integration with building management systems"
       ],
-      metaDescription: "Advanced SMATV and IPTV systems for multi-dwelling units with high-definition content distribution and interactive features by SmartTech.",
+      metaDescription: "Advanced SMATV and IPTV systems for multi-dwelling units with high-definition content distribution and interactive features by GM.",
       relatedServices: ["home-cinema/cinema-audio-video", "elv-systems/structured-cabling"],
       brandLogos: [
         { name: "Zinwell", logo: "/brand/zi.png" },
@@ -213,7 +213,7 @@ export interface ServiceData {
       title: "Audio/Video Intercom",
       description: "Modern communication systems for enhanced security and convenience.",
       content: `
-        <p>SmartTech delivers state-of-the-art audio and video intercom systems that enhance security while providing convenient communication between residents and visitors. Our solutions combine clear audio, high-definition video, and intuitive interfaces for seamless operation.</p>
+        <p>GM delivers state-of-the-art audio and video intercom systems that enhance security while providing convenient communication between residents and visitors. Our solutions combine clear audio, high-definition video, and intuitive interfaces for seamless operation.</p>
         
         <h3>Our Audio/Video Intercom Solutions Include:</h3>
         <ul>
@@ -236,7 +236,7 @@ export interface ServiceData {
         "Visitor logging and recording",
         "Integration with other security systems"
       ],
-      metaDescription: "Advanced audio and video intercom systems with HD video, mobile access, and integration capabilities for residential and commercial properties by SmartTech.",
+      metaDescription: "Advanced audio and video intercom systems with HD video, mobile access, and integration capabilities for residential and commercial properties by GM.",
       relatedServices: ["elv-systems/access-control", "elv-systems/cctv-surveillance"],
       brandLogos: [
         { name: "Aiphone", logo: "/brand/ai.png" },
@@ -250,7 +250,7 @@ export interface ServiceData {
       title: "Smart Locks",
       description: "Keyless entry solutions for enhanced security and convenience.",
       content: `
-        <p>SmartTech offers innovative smart lock solutions that provide secure, keyless entry to homes and businesses. Our systems combine cutting-edge technology with user-friendly interfaces to enhance security while adding convenience to daily access.</p>
+        <p>GM offers innovative smart lock solutions that provide secure, keyless entry to homes and businesses. Our systems combine cutting-edge technology with user-friendly interfaces to enhance security while adding convenience to daily access.</p>
         
         <h3>Our Smart Lock Solutions Include:</h3>
         <ul>
@@ -273,7 +273,7 @@ export interface ServiceData {
         "Activity logs and notifications",
         "Remote lock/unlock capabilities"
       ],
-      metaDescription: "Advanced smart lock solutions with biometric, PIN code, and mobile access for enhanced security and convenience by SmartTech.",
+      metaDescription: "Advanced smart lock solutions with biometric, PIN code, and mobile access for enhanced security and convenience by GM.",
       relatedServices: ["elv-systems/access-control", "home-automation/smart-city-systems"],
       brandLogos: [
         { name: "August Home", logo: "/brand/au.png" },
@@ -287,7 +287,7 @@ export interface ServiceData {
       title: "Public Address Systems",
       description: "Clear and reliable communication systems for announcements and emergency notifications.",
       content: `
-        <p>SmartTech delivers high-quality public address systems designed for clear and effective communication in commercial buildings, educational institutions, transportation hubs, and public spaces. Our solutions ensure that announcements and emergency notifications reach everyone in the covered area.</p>
+        <p>GM delivers high-quality public address systems designed for clear and effective communication in commercial buildings, educational institutions, transportation hubs, and public spaces. Our solutions ensure that announcements and emergency notifications reach everyone in the covered area.</p>
         
         <h3>Our Public Address Solutions Include:</h3>
         <ul>
@@ -310,7 +310,7 @@ export interface ServiceData {
         "Scheduled announcement automation",
         "Integration with building management systems"
       ],
-      metaDescription: "Professional public address systems with zone-based management and emergency capabilities for commercial and public spaces by SmartTech.",
+      metaDescription: "Professional public address systems with zone-based management and emergency capabilities for commercial and public spaces by GM.",
       relatedServices: ["elv-systems/structured-cabling", "home-automation/music-control"],
       brandLogos: [
         { name: "Bose Professional", logo: "/brand/bos.png" },
@@ -325,7 +325,7 @@ export interface ServiceData {
       title: "Wi-Fi Solutions",
       description: "High-performance wireless networks for seamless connectivity across your premises.",
       content: `
-        <p>SmartTech delivers enterprise-grade Wi-Fi solutions that provide reliable, fast, and secure wireless connectivity. Our expert team designs and implements wireless networks tailored to your specific requirements and environment.</p>
+        <p>GM delivers enterprise-grade Wi-Fi solutions that provide reliable, fast, and secure wireless connectivity. Our expert team designs and implements wireless networks tailored to your specific requirements and environment.</p>
         
         <h3>Our Wi-Fi Solutions Include:</h3>
         <ul>
@@ -339,8 +339,8 @@ export interface ServiceData {
         
         <p>Whether you need coverage for a small office or a large commercial space, our Wi-Fi solutions provide consistent performance and eliminate dead zones. We use the latest wireless technologies to ensure optimal speed, reliability, and security for all your connected devices.</p>
       `,
-      image: "/ict-solution/wifi-solution/wi.webp",
-      heroBackground: "/ict-solution/wifi-solution/wifi-hero.jpeg",
+      image: "/ict-solution/wifi-solutions/wi.webp",
+      heroBackground: "/ict-solution/wifi-solutions/wifi-hero.jpeg",
       features: [
         "High-speed wireless connectivity",
         "Comprehensive coverage without dead zones",
@@ -348,7 +348,7 @@ export interface ServiceData {
         "Guest access management",
         "Scalable for growing needs"
       ],
-      metaDescription: "Enterprise-grade Wi-Fi solutions for reliable wireless connectivity in commercial and residential spaces by SmartTech.",
+      metaDescription: "Enterprise-grade Wi-Fi solutions for reliable wireless connectivity in commercial and residential spaces by GM.",
       relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"],
       brandLogos: [
         { name: "Cisco", logo: "/brand/ci.png" },
@@ -362,7 +362,7 @@ export interface ServiceData {
       title: "IT & Server Solutions",
       description: "Comprehensive IT infrastructure and server solutions for business operations.",
       content: `
-        <p>SmartTech provides robust IT and server solutions designed to support your business operations with reliable, secure, and scalable infrastructure. Our expert team designs, implements, and maintains systems that meet your specific technology needs.</p>
+        <p>GM provides robust IT and server solutions designed to support your business operations with reliable, secure, and scalable infrastructure. Our expert team designs, implements, and maintains systems that meet your specific technology needs.</p>
         
         <h3>Our IT & Server Solutions Include:</h3>
         <ul>
@@ -376,8 +376,8 @@ export interface ServiceData {
         
         <p>We take a consultative approach to understand your business requirements before recommending appropriate solutions. Our team handles everything from initial planning to implementation and provides ongoing support to ensure your IT infrastructure operates at peak efficiency.</p>
       `,
-      image: "/ict-solution/it-server/it.jpg",
-      heroBackground: "/ict-solution/it-server/it-hero.jpg",
+      image: "/ict-solution/it-server-solutions/it.jpg",
+      heroBackground: "/ict-solution/it-server-solutions/it-hero.jpg",
       features: [
         "Customized server architecture",
         "Scalable infrastructure design",
@@ -385,7 +385,7 @@ export interface ServiceData {
         "Reliable backup and recovery systems",
         "Ongoing technical support"
       ],
-      metaDescription: "Comprehensive IT and server solutions with cloud integration, virtualization, and security features for business operations by SmartTech.",
+      metaDescription: "Comprehensive IT and server solutions with cloud integration, virtualization, and security features for business operations by GM.",
       relatedServices: ["ict-solutions/wifi-solutions", "elv-systems/structured-cabling"],
       brandLogos: [
         { name: "Dell Technologies", logo: "/brand/de.png" },
@@ -395,11 +395,11 @@ export interface ServiceData {
       ]
     },
   
-    "ict-solutions/telephone-pabx": {
+    "ict-solutions/telephone": {
       title: "Telephone & PABX",
       description: "Advanced telephony systems for efficient business communication.",
       content: `
-        <p>SmartTech delivers modern telephone and PABX (Private Automatic Branch Exchange) solutions that enhance your business communication capabilities. Our systems combine traditional reliability with innovative features for comprehensive telephony management.</p>
+        <p>GM delivers modern telephone and PABX (Private Automatic Branch Exchange) solutions that enhance your business communication capabilities. Our systems combine traditional reliability with innovative features for comprehensive telephony management.</p>
         
         <h3>Our Telephone & PABX Solutions Include:</h3>
         <ul>
@@ -422,7 +422,7 @@ export interface ServiceData {
         "Integration with other business systems",
         "Comprehensive technical support"
       ],
-      metaDescription: "Modern telephone and PABX systems with IP-based solutions and unified communications for efficient business operations by SmartTech.",
+      metaDescription: "Modern telephone and PABX systems with IP-based solutions and unified communications for efficient business operations by GM.",
       relatedServices: ["ict-solutions/it-server-solutions", "elv-systems/structured-cabling"],
       brandLogos: [
         { name: "Avaya", logo: "/brand/av.avif" },
@@ -435,7 +435,7 @@ export interface ServiceData {
       title: "Solar Systems",
       description: "Sustainable energy solutions for residential and commercial properties.",
       content: `
-        <p>SmartTech provides comprehensive solar energy solutions designed to reduce your carbon footprint and energy costs. Our expert team designs and installs custom solar systems tailored to your specific energy needs and property characteristics.</p>
+        <p>GM provides comprehensive solar energy solutions designed to reduce your carbon footprint and energy costs. Our expert team designs and installs custom solar systems tailored to your specific energy needs and property characteristics.</p>
         
         <h3>Our Solar System Solutions Include:</h3>
         <ul>
@@ -449,8 +449,8 @@ export interface ServiceData {
         
         <p>We handle every aspect of your solar installation, from initial assessment to permitting, installation, and final inspection. Our solutions integrate seamlessly with your existing electrical systems and can be expanded as your energy needs grow.</p>
       `,
-      image: "/ict-solution/solar-system/so.webp",
-  heroBackground: "/ict-solution/solar-system/so-hero.jpg",
+      image: "/ict-solution/solar-systems/so.webp",
+  heroBackground: "/ict-solution/solar-systems/so-hero.jpg",
       features: [
         "Reduced energy costs",
         "Sustainable power generation",
@@ -458,7 +458,7 @@ export interface ServiceData {
         "System monitoring capabilities",
         "Integration with home automation"
       ],
-      metaDescription: "Custom solar energy systems for sustainable power generation in residential and commercial properties by SmartTech.",
+      metaDescription: "Custom solar energy systems for sustainable power generation in residential and commercial properties by GM.",
       relatedServices: ["home-automation/self-powered-homes", "bms/intelligent-building"],
       brandLogos: [
     
@@ -470,11 +470,11 @@ export interface ServiceData {
     },
   
     // Home Cinema
-    "home-cinema/acoustic-rooms": {
+    "home-cinema/acoustic": {
       title: "Acoustic Rooms",
       description: "Professionally designed spaces with optimal acoustic properties for immersive audio experiences.",
       content: `
-        <p>SmartTech specializes in creating acoustic rooms that deliver exceptional sound quality for music enjoyment, home theaters, and professional recording. Our expert team designs and implements custom acoustic solutions that optimize sound reproduction while enhancing the aesthetic appeal of your space.</p>
+        <p>GM specializes in creating acoustic rooms that deliver exceptional sound quality for music enjoyment, home theaters, and professional recording. Our expert team designs and implements custom acoustic solutions that optimize sound reproduction while enhancing the aesthetic appeal of your space.</p>
         
         <h3>Our Acoustic Room Solutions Include:</h3>
         <ul>
@@ -497,7 +497,7 @@ export interface ServiceData {
         "Balanced frequency response",
         "Aesthetically integrated design"
       ],
-      metaDescription: "Custom acoustic room solutions with professional sound treatment and isolation for optimal audio experiences by SmartTech.",
+      metaDescription: "Custom acoustic room solutions with professional sound treatment and isolation for optimal audio experiences by GM.",
       relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/led-walls-screens"],
       brandLogos: [
         { name: "Bose", logo: "/brand/bo.png" },
@@ -508,11 +508,11 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/led-walls-screens": {
+    "home-cinema/led-wall": {
       title: "LED Walls/Screens",
       description: "State-of-the-art display solutions for stunning visual experiences.",
       content: `
-        <p>SmartTech offers premium LED walls and screens that deliver exceptional visual experiences for home theaters, commercial spaces, and entertainment venues. Our display solutions combine cutting-edge technology with expert installation for stunning image quality.</p>
+        <p>GM offers premium LED walls and screens that deliver exceptional visual experiences for home theaters, commercial spaces, and entertainment venues. Our display solutions combine cutting-edge technology with expert installation for stunning image quality.</p>
         
         <h3>Our LED Display Solutions Include:</h3>
         <ul>
@@ -535,7 +535,7 @@ export interface ServiceData {
         "Seamless integration with audio systems",
         "Professional calibration"
       ],
-      metaDescription: "Premium LED walls and screens with 4K resolution and custom configurations for home theaters and commercial spaces by SmartTech.",
+      metaDescription: "Premium LED walls and screens with 4K resolution and custom configurations for home theaters and commercial spaces by GM.",
       relatedServices: ["home-cinema/cinema-audio-video", "home-cinema/acoustic-rooms"],
       brandLogos: [
         { name: "Samsung", logo: "/brand/sa.svg" },
@@ -546,11 +546,11 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/cinema-audio-video": {
+    "home-cinema/cinema-audio": {
       title: "Cinema Audio/Video",
       description: "Comprehensive audio and video solutions for immersive home cinema experiences.",
       content: `
-        <p>SmartTech delivers professional-grade cinema audio and video systems that transform your space into an immersive entertainment environment. Our solutions combine the latest technologies with expert design to create exceptional viewing and listening experiences.</p>
+        <p>GM delivers professional-grade cinema audio and video systems that transform your space into an immersive entertainment environment. Our solutions combine the latest technologies with expert design to create exceptional viewing and listening experiences.</p>
         
         <h3>Our Cinema Audio/Video Solutions Include:</h3>
         <ul>
@@ -573,7 +573,7 @@ export interface ServiceData {
         "Calibrated for optimal performance",
         "Intuitive control interfaces"
       ],
-      metaDescription: "Professional cinema audio and video systems with surround sound and 4K projection for immersive home entertainment by SmartTech.",
+      metaDescription: "Professional cinema audio and video systems with surround sound and 4K projection for immersive home entertainment by GM.",
       relatedServices: ["home-cinema/acoustic-rooms", "home-cinema/cinema-automation"],
       brandLogos: [
         { name: "JBL Professional", logo: "/brand/jb.png" },
@@ -584,11 +584,11 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/cinema-automation": {
+    "home-cinema/Cinema-automation": {
       title: "Cinema Automation",
       description: "Intelligent control systems that enhance the home theater experience.",
       content: `
-        <p>SmartTech offers sophisticated cinema automation solutions that streamline the operation of your home theater system. Our intelligent control systems allow you to create the perfect viewing environment with the touch of a button.</p>
+        <p>GM offers sophisticated cinema automation solutions that streamline the operation of your home theater system. Our intelligent control systems allow you to create the perfect viewing environment with the touch of a button.</p>
         
         <h3>Our Cinema Automation Solutions Include:</h3>
         <ul>
@@ -602,8 +602,8 @@ export interface ServiceData {
         
         <p>We design custom automation systems that integrate all aspects of your home theater, from audio and video equipment to lighting, seating, and environmental controls. With intuitive interfaces accessible via touchscreens, remote controls, or mobile devices, you can create and recall customized settings for different viewing scenarios.</p>
       `,
-      image: "/home-cinema/cinema-automation/ci.png",
-  heroBackground: "/home-cinema/cinema-automation/ci-hero.jpg",
+      image: "/home-cinema/Cinema-automation/ci.png",
+  heroBackground: "/home-cinema/Cinema-automation/ci-hero.jpg",
       features: [
         "One-touch operation",
         "Customized scene settings",
@@ -611,7 +611,7 @@ export interface ServiceData {
         "Multiple control interfaces",
         "Seamless equipment integration"
       ],
-      metaDescription: "Intelligent cinema automation systems with one-touch operation and integrated control for enhanced home theater experiences by SmartTech.",
+      metaDescription: "Intelligent cinema automation systems with one-touch operation and integrated control for enhanced home theater experiences by GM.",
       relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"],
       brandLogos: [
         { name: "Control4", logo: "/brand/co.png" },
@@ -625,7 +625,7 @@ export interface ServiceData {
       title: "Cinema Seating",
       description: "Luxury seating solutions designed for optimal comfort and viewing experiences.",
       content: `
-        <p>SmartTech provides premium cinema seating options that combine comfort, style, and functionality to enhance your home theater experience. Our seating solutions are designed with optimal viewing angles and ergonomics in mind.</p>
+        <p>GM provides premium cinema seating options that combine comfort, style, and functionality to enhance your home theater experience. Our seating solutions are designed with optimal viewing angles and ergonomics in mind.</p>
         
         <h3>Our Cinema Seating Solutions Include:</h3>
         <ul>
@@ -648,7 +648,7 @@ export interface ServiceData {
         "Power recline functionality",
         "Integrated accessory features"
       ],
-      metaDescription: "Luxury cinema seating solutions with custom configurations and premium comfort features for home theaters by SmartTech.",
+      metaDescription: "Luxury cinema seating solutions with custom configurations and premium comfort features for home theaters by GM.",
       relatedServices: ["home-cinema/acoustic-rooms", "home-cinema/cinema-automation"],
       brandLogos: [
         { name: "Octane Seating", logo: "/brand/oc.jpg" },
@@ -660,11 +660,11 @@ export interface ServiceData {
   
     },
   
-    "home-cinema/game-rooms": {
+    "home-cinema/game": {
       title: "Game Rooms",
       description: "Custom-designed spaces for immersive gaming experiences.",
       content: `
-        <p>SmartTech creates cutting-edge game rooms that deliver immersive entertainment experiences for casual and serious gamers alike. Our custom gaming spaces combine advanced technology with thoughtful design for optimal gaming enjoyment.</p>
+        <p>GM creates cutting-edge game rooms that deliver immersive entertainment experiences for casual and serious gamers alike. Our custom gaming spaces combine advanced technology with thoughtful design for optimal gaming enjoyment.</p>
         
         <h3>Our Game Room Solutions Include:</h3>
         <ul>
@@ -687,7 +687,7 @@ export interface ServiceData {
         "Customized gaming stations",
         "Atmospheric lighting effects"
       ],
-      metaDescription: "Custom game room solutions with optimized displays, immersive audio, and specialized design for enhanced gaming experiences by SmartTech.",
+      metaDescription: "Custom game room solutions with optimized displays, immersive audio, and specialized design for enhanced gaming experiences by GM.",
       relatedServices: ["home-cinema/cinema-audio-video", "home-automation/lighting-control"],
       brandLogos: [
         { name: "Razer", logo: "/brand/ra.jpg" },
@@ -703,7 +703,7 @@ export interface ServiceData {
       title: "Lighting Control",
       description: "Intelligent lighting systems for ambiance, efficiency, and convenience.",
       content: `
-        <p>SmartTech offers sophisticated lighting control solutions that enhance the ambiance, efficiency, and functionality of your spaces. Our systems allow for precise control of lighting scenes, automation of lighting schedules, and integration with other smart home features.</p>
+        <p>GM offers sophisticated lighting control solutions that enhance the ambiance, efficiency, and functionality of your spaces. Our systems allow for precise control of lighting scenes, automation of lighting schedules, and integration with other smart home features.</p>
         
         <h3>Our Lighting Control Solutions Include:</h3>
         <ul>
@@ -726,7 +726,7 @@ export interface ServiceData {
         "Remote access and control",
         "Integration with voice assistants"
       ],
-      metaDescription: "Intelligent lighting control systems with customized scenes and automation for enhanced ambiance and efficiency by SmartTech.",
+      metaDescription: "Intelligent lighting control systems with customized scenes and automation for enhanced ambiance and efficiency by GM.",
       relatedServices: ["home-automation/smart-city-systems", "home-cinema/cinema-automation"],
       brandLogos: [
         { name: "Lutron", logo: "/brand/lu.png" },
@@ -741,7 +741,7 @@ export interface ServiceData {
       title: "Curtain Control",
       description: "Automated drapery and shade systems for convenience and energy efficiency.",
       content: `
-        <p>SmartTech provides advanced curtain control systems that automate the operation of drapes, blinds, and shades throughout your property. Our solutions combine elegant hardware with intelligent control for enhanced convenience and energy management.</p>
+        <p>GM provides advanced curtain control systems that automate the operation of drapes, blinds, and shades throughout your property. Our solutions combine elegant hardware with intelligent control for enhanced convenience and energy management.</p>
         
         <h3>Our Curtain Control Solutions Include:</h3>
         <ul>
@@ -764,7 +764,7 @@ export interface ServiceData {
         "Integration with smart home systems",
         "Battery and hardwired options"
       ],
-      metaDescription: "Automated curtain and shade control systems with scheduling and smart home integration for enhanced convenience and efficiency by SmartTech.",
+      metaDescription: "Automated curtain and shade control systems with scheduling and smart home integration for enhanced convenience and efficiency by GM.",
       relatedServices: ["home-automation/lighting-control", "home-automation/hvac-control"],
       brandLogos: [
         { name: "Somfy", logo: "/brand/so.png" },
@@ -777,7 +777,7 @@ export interface ServiceData {
     title: "HVAC Control",
     description: "Intelligent climate management systems for comfort and energy efficiency.",
     content: `
-      <p>SmartTech delivers advanced HVAC control solutions that optimize comfort while minimizing energy consumption. Our intelligent climate management systems provide precise temperature control, improved air quality, and simplified operation.</p>
+      <p>GM delivers advanced HVAC control solutions that optimize comfort while minimizing energy consumption. Our intelligent climate management systems provide precise temperature control, improved air quality, and simplified operation.</p>
       
       <h3>Our HVAC Control Solutions Include:</h3>
       <ul>
@@ -800,7 +800,7 @@ export interface ServiceData {
       "Remote access and monitoring",
       "Integration with other smart systems"
     ],
-    metaDescription: "Smart HVAC control systems with zone-based management and energy optimization for enhanced comfort and efficiency by SmartTech.",
+    metaDescription: "Smart HVAC control systems with zone-based management and energy optimization for enhanced comfort and efficiency by GM.",
     relatedServices: ["home-automation/lighting-control", "bms/air-quality-control"],
     brandLogos: [
       { name: "Nest", logo: "/brand/ne.jpg" },
@@ -814,7 +814,7 @@ export interface ServiceData {
     title: "Music Control",
     description: "Multi-room audio systems for seamless music distribution throughout your property.",
     content: `
-      <p>SmartTech offers sophisticated music control solutions that allow you to enjoy high-quality audio in any room of your home or business. Our multi-room audio systems provide seamless distribution of music with intuitive control interfaces.</p>
+      <p>GM offers sophisticated music control solutions that allow you to enjoy high-quality audio in any room of your home or business. Our multi-room audio systems provide seamless distribution of music with intuitive control interfaces.</p>
       
       <h3>Our Music Control Solutions Include:</h3>
       <ul>
@@ -837,7 +837,7 @@ export interface ServiceData {
       "Integration with streaming services",
       "Custom zone configuration"
     ],
-    metaDescription: "Advanced multi-room audio systems with high-fidelity sound and intuitive control for seamless music distribution by SmartTech.",
+    metaDescription: "Advanced multi-room audio systems with high-fidelity sound and intuitive control for seamless music distribution by GM.",
     relatedServices: ["home-cinema/cinema-audio-video", "home-automation/smart-city-systems"],
     brandLogos: [
       { name: "Sonos", logo: "/brand/so.png" },
@@ -851,7 +851,7 @@ export interface ServiceData {
     title: "Smart City & Smart Systems",
     description: "Integrated technology solutions for modern urban environments and communities.",
     content: `
-      <p>SmartTech provides comprehensive smart city and smart system solutions that enhance urban living through integrated technology applications. Our systems improve efficiency, sustainability, and quality of life for residents and businesses.</p>
+      <p>GM provides comprehensive smart city and smart system solutions that enhance urban living through integrated technology applications. Our systems improve efficiency, sustainability, and quality of life for residents and businesses.</p>
       
       <h3>Our Smart City & Systems Solutions Include:</h3>
       <ul>
@@ -874,7 +874,7 @@ export interface ServiceData {
       "Environmental sustainability",
       "Improved quality of life"
     ],
-    metaDescription: "Integrated smart city and community systems with connected technologies for enhanced urban living and sustainability by SmartTech.",
+    metaDescription: "Integrated smart city and community systems with connected technologies for enhanced urban living and sustainability by GM.",
     relatedServices: ["home-automation/self-powered-homes", "bms/internet-of-things"],
     brandLogos: [
 
@@ -889,7 +889,7 @@ export interface ServiceData {
     title: "Self-Powered Smart Homes",
     description: "Sustainable living solutions combining renewable energy with intelligent automation.",
     content: `
-      <p>SmartTech delivers innovative self-powered smart home solutions that combine renewable energy generation with intelligent automation for sustainable, efficient living. Our integrated approach reduces carbon footprint while enhancing comfort and convenience.</p>
+      <p>GM delivers innovative self-powered smart home solutions that combine renewable energy generation with intelligent automation for sustainable, efficient living. Our integrated approach reduces carbon footprint while enhancing comfort and convenience.</p>
       
       <h3>Our Self-Powered Home Solutions Include:</h3>
       <ul>
@@ -912,7 +912,7 @@ export interface ServiceData {
       "Intelligent power management",
       "Real-time energy monitoring"
     ],
-    metaDescription: "Comprehensive self-powered smart home solutions with renewable energy and intelligent automation for sustainable living by SmartTech.",
+    metaDescription: "Comprehensive self-powered smart home solutions with renewable energy and intelligent automation for sustainable living by GM.",
     relatedServices: ["ict-solutions/solar-systems", "home-automation/hvac-control"],
     brandLogos: [
       { name: "Belden", logo: "/brand/be.avif" },
@@ -927,7 +927,7 @@ export interface ServiceData {
     title: "Intelligent Building",
     description: "Comprehensive building management solutions for enhanced efficiency and comfort.",
     content: `
-      <p>SmartTech delivers advanced intelligent building solutions that optimize operations, enhance occupant comfort, and improve energy efficiency. Our integrated systems provide centralized control and monitoring of all building functions.</p>
+      <p>GM delivers advanced intelligent building solutions that optimize operations, enhance occupant comfort, and improve energy efficiency. Our integrated systems provide centralized control and monitoring of all building functions.</p>
       
       <h3>Our Intelligent Building Solutions Include:</h3>
       <ul>
@@ -950,7 +950,7 @@ export interface ServiceData {
       "Reduced maintenance costs",
       "Data-driven optimization"
     ],
-    metaDescription: "Advanced intelligent building systems with integrated management and optimization for enhanced operational efficiency by SmartTech.",
+    metaDescription: "Advanced intelligent building systems with integrated management and optimization for enhanced operational efficiency by GM.",
     relatedServices: ["bms/integrated-services", "bms/internet-of-things"],
     brandLogos: [
       { name: "Honeywell", logo: "/brand/ho.png" },
@@ -964,7 +964,7 @@ export interface ServiceData {
     title: "Integrated Services",
     description: "Unified management solutions for all building systems and services.",
     content: `
-      <p>SmartTech offers comprehensive integrated services solutions that unify the management and operation of diverse building systems. Our approach eliminates silos between different technologies to create a seamless operational experience.</p>
+      <p>GM offers comprehensive integrated services solutions that unify the management and operation of diverse building systems. Our approach eliminates silos between different technologies to create a seamless operational experience.</p>
       
       <h3>Our Integrated Services Solutions Include:</h3>
       <ul>
@@ -987,7 +987,7 @@ export interface ServiceData {
       "Coordinated system responses",
       "Comprehensive data insights"
     ],
-    metaDescription: "Unified building management solutions with cross-system integration for enhanced efficiency and simplified operations by SmartTech.",
+    metaDescription: "Unified building management solutions with cross-system integration for enhanced efficiency and simplified operations by GM.",
     relatedServices: ["bms/intelligent-building", "bms/internet-of-things"],
     brandLogos: [
       { name: "Trane", logo: "/brand/tr.png" },
@@ -1001,7 +1001,7 @@ export interface ServiceData {
     title: "Air Quality Control",
     description: "Advanced solutions for monitoring and maintaining healthy indoor environments.",
     content: `
-      <p>SmartTech provides sophisticated air quality control systems that monitor, analyze, and optimize indoor air quality for healthier and more comfortable environments. Our solutions combine sensing technology with intelligent management for comprehensive air quality maintenance.</p>
+      <p>GM provides sophisticated air quality control systems that monitor, analyze, and optimize indoor air quality for healthier and more comfortable environments. Our solutions combine sensing technology with intelligent management for comprehensive air quality maintenance.</p>
       
       <h3>Our Air Quality Control Solutions Include:</h3>
       <ul>
@@ -1024,7 +1024,7 @@ export interface ServiceData {
       "Enhanced occupant health and comfort",
       "Energy-efficient operation"
     ],
-    metaDescription: "Advanced air quality control systems with real-time monitoring and automated management for healthier indoor environments by SmartTech.",
+    metaDescription: "Advanced air quality control systems with real-time monitoring and automated management for healthier indoor environments by GM.",
     relatedServices: ["home-automation/hvac-control", "bms/intelligent-building"],
     brandLogos: [
       { name: "Dyson", logo: "/brand/dy.png" },
@@ -1037,7 +1037,7 @@ export interface ServiceData {
     title: "BTU Metering",
     description: "Precise thermal energy measurement solutions for efficient resource management.",
     content: `
-      <p>SmartTech delivers advanced BTU metering solutions that accurately measure and monitor thermal energy consumption in building systems. Our precision measurement technologies enable fair billing and effective energy management strategies.</p>
+      <p>GM delivers advanced BTU metering solutions that accurately measure and monitor thermal energy consumption in building systems. Our precision measurement technologies enable fair billing and effective energy management strategies.</p>
       
       <h3>Our BTU Metering Solutions Include:</h3>
       <ul>
@@ -1060,7 +1060,7 @@ export interface ServiceData {
       "Leak and waste detection",
       "Optimization opportunity identification"
     ],
-    metaDescription: "Accurate BTU metering systems for thermal energy measurement and management in commercial and residential properties by SmartTech.",
+    metaDescription: "Accurate BTU metering systems for thermal energy measurement and management in commercial and residential properties by GM.",
     relatedServices: ["bms/intelligent-building", "home-automation/hvac-control"],
     
   },
@@ -1069,7 +1069,7 @@ export interface ServiceData {
     title: "Internet of Things (IoT)",
     description: "Connected device ecosystems for intelligent automation and data-driven insights.",
     content: `
-      <p>SmartTech implements comprehensive Internet of Things (IoT) solutions that connect devices, systems, and environments to create intelligent, responsive ecosystems. Our IoT implementations enable advanced automation, detailed analytics, and enhanced decision-making capabilities.</p>
+      <p>GM implements comprehensive Internet of Things (IoT) solutions that connect devices, systems, and environments to create intelligent, responsive ecosystems. Our IoT implementations enable advanced automation, detailed analytics, and enhanced decision-making capabilities.</p>
       
       <h3>Our IoT Solutions Include:</h3>
       <ul>
@@ -1092,7 +1092,7 @@ export interface ServiceData {
       "Predictive maintenance capabilities",
       "Scalable IoT architecture"
     ],
-    metaDescription: "Advanced Internet of Things (IoT) solutions with connected devices and intelligent automation for data-driven operations by SmartTech.",
+    metaDescription: "Advanced Internet of Things (IoT) solutions with connected devices and intelligent automation for data-driven operations by GM.",
     relatedServices: ["bms/intelligent-building", "home-automation/smart-city-systems"],
     brandLogos: [
       { name: "Cisco", logo: "/brand/ci.png" },
