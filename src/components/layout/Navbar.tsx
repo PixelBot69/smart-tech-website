@@ -85,14 +85,14 @@ const NavbarComponent = () => {
     },
     {
       title: "Home Cinema",
-      href: "/home-cinema",
+      href: "/Home-cinema",
       submenu: [
-        { title: "Acoustic Rooms", href: "/home-cinema/acoutic" },
-        { title: "LED Walls/Screens", href: "/home-cinema/led-wall" },
-        { title: "Cinema Audio/Video", href: "/home-cinema/cinema-audio" },
-        { title: "Cinema Automation", href: "/home-cinema/Cinema-automation" },
-        { title: "Cinema Seating", href: "/home-cinema/cinema-seating" },
-        { title: "Game Rooms", href: "/home-cinema/game" }
+        { title: "Acoustic Rooms", href: "/Home-cinema/acoutic" },
+        { title: "LED Walls/Screens", href: "/Home-cinema/Led-wall" },
+        { title: "Cinema Audio/Video", href: "/Home-cinema/cinema-audio" },
+        { title: "Cinema Automation", href: "/Home-cinema/Cinema-automation" },
+        { title: "Cinema Seating", href: "/Home-cinema/cinema-seating" },
+        { title: "Game Rooms", href: "/Home-cinema/game" }
       ]
     },
     {
