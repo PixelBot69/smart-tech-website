@@ -1,30 +1,46 @@
-import React from 'react';
+import { Inter } from 'next/font/google';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import '@/styles/globals.css';
 
+const inter = Inter({ subsets: ['latin'] });
 
-import FeaturedProjectsSection from '@/components/FeaturedProjectsSection';
-import ServicesSection from '@/components/ServiceSection';
+export const metadata = {
+  title: 'Smart Technology Solutions',
+  description: 'Providing cutting-edge technology solutions for homes and businesses',
+};
 
-import StatsSection from '@/components/StatsSection';
-import HeroSection from '@/components/HeroSection';
-import NewsletterSection from '../components/NewsletterSection';
-import ContactFormSection from '../components/NewsletterSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import AssociatesSection from '@/components/AssociatesSection';
-import BenefitsSection from '@/components/Benifits';
-
-export default function Home() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <main>
-      <HeroSection />
-      <FeaturedProjectsSection/>
-      
-      <ServicesSection />
-      
-      <AssociatesSection/>
-      <BenefitsSection/>
-      <StatsSection />
-      <TestimonialsSection/>
-      <ContactFormSection/>
-    </main>
+    <html lang="en">
+      <head>
+        {/* Google Analytics Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CRMMGYLPNK"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CRMMGYLPNK', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
+      <body className={inter.className}>
+        <Navbar />
+        <main className="min-h-screen pt-20">{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }
