@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.gmautomation.co.in
+
+# Sitemaps
+Sitemap: https://www.gmautomation.co.in/sitemap.xml

@@ -470,7 +470,7 @@ export interface ServiceData {
     },
   
     // Home Cinema
-    "home-cinema/acoutic": {
+    "Home-cinema/acoutic": {
       title: "Acoustic Rooms",
       description: "Professionally designed spaces with optimal acoustic properties for immersive audio experiences.",
       content: `
@@ -488,8 +488,8 @@ export interface ServiceData {
         
         <p>We take a scientific approach to acoustic design, using advanced modeling software to identify acoustic challenges and develop targeted solutions. The result is a balanced acoustic environment that brings out the best in your audio equipment and creates an immersive listening or viewing experience.</p>
       `,
-      image: "/home-cinema/acoutic/ac.webp",
-      heroBackground: "/home-cinema/acoutic/ac-hero.jpg",
+      image: "/Home-cinema/acoutic/ac.webp",
+      heroBackground: "/Home-cinema/acoutic/ac-hero.jpg",
       features: [
         "Precision-engineered acoustics",
         "Customized sound environments",
@@ -508,7 +508,7 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/led-wall": {
+    "Home-cinema/Led-wall": {
       title: "LED Walls/Screens",
       description: "State-of-the-art display solutions for stunning visual experiences.",
       content: `
@@ -526,8 +526,8 @@ export interface ServiceData {
         
         <p>We work with you to select the ideal display technology based on your space, viewing distance, ambient lighting conditions, and content preferences. Our team handles precise installation and calibration to ensure optimal picture quality and viewing experience.</p>
       `,
-      image: "/home-cinema/led-wall/le.jpg",
-      heroBackground: "/home-cinema/led-wall/le-hero.webp",
+      image: "/Home-cinema/Led-wall/le.jpg",
+      heroBackground: "/Home-cinema/Led-wall/le-hero.webp",
       features: [
         "Stunning visual clarity",
         "Custom sizing and configurations",
@@ -546,7 +546,7 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/cinema-audio": {
+    "Home-cinema/cinema-audio": {
       title: "Cinema Audio/Video",
       description: "Comprehensive audio and video solutions for immersive home cinema experiences.",
       content: `
@@ -564,8 +564,8 @@ export interface ServiceData {
         
         <p>We design cinema systems tailored to your space constraints, budget considerations, and performance expectations. Our team handles everything from initial concept to final calibration, ensuring that every component works in harmony to deliver a truly cinematic experience.</p>
       `,
-      image: "/home-cinema/cinema-audio/ce.jpg",
-      heroBackground: "/home-cinema/cinema-audio/ce-hero.png",
+      image: "/Home-cinema/cinema-audio/ce.jpg",
+      heroBackground: "/Home-cinema/cinema-audio/ce-hero.png",
       features: [
         "THX and Dolby Atmos compatibility",
         "Reference-level audio performance",
@@ -584,7 +584,7 @@ export interface ServiceData {
       
     },
   
-    "home-cinema/Cinema-automation": {
+    "Home-cinema/Cinema-automation": {
       title: "Cinema Automation",
       description: "Intelligent control systems that enhance the home theater experience.",
       content: `
@@ -602,8 +602,8 @@ export interface ServiceData {
         
         <p>We design custom automation systems that integrate all aspects of your home theater, from audio and video equipment to lighting, seating, and environmental controls. With intuitive interfaces accessible via touchscreens, remote controls, or mobile devices, you can create and recall customized settings for different viewing scenarios.</p>
       `,
-      image: "/home-cinema/Cinema-automation/ci.png",
-  heroBackground: "/home-cinema/Cinema-automation/ci-hero.jpg",
+      image: "/Home-cinema/Cinema-automation/ci.png",
+  heroBackground: "/Home-cinema/Cinema-automation/ci-hero.jpg",
       features: [
         "One-touch operation",
         "Customized scene settings",
@@ -621,7 +621,7 @@ export interface ServiceData {
       ]
     },
   
-    "home-cinema/cinema-seating": {
+    "Home-cinema/cinema-seating": {
       title: "Cinema Seating",
       description: "Luxury seating solutions designed for optimal comfort and viewing experiences.",
       content: `
@@ -639,8 +639,8 @@ export interface ServiceData {
         
         <p>We work with you to design seating arrangements that maximize viewing comfort while accommodating your space constraints. Our team can create custom configurations with premium materials and finishes to match your theater's aesthetic while ensuring optimal sight lines for every seat.</p>
       `,
-      image: "/home-cinema/cinema-seating/ci.jpg",
-  heroBackground: "/home-cinema/cinema-seating/ci-hero.png",
+      image: "/Home-cinema/cinema-seating/ci.jpg",
+  heroBackground: "/Home-cinema/cinema-seating/ci-hero.png",
       features: [
         "Ergonomic comfort design",
         "Customized seating arrangements",
@@ -660,7 +660,7 @@ export interface ServiceData {
   
     },
   
-    "home-cinema/game": {
+    "Home-cinema/game": {
       title: "Game Rooms",
       description: "Custom-designed spaces for immersive gaming experiences.",
       content: `
@@ -678,8 +678,8 @@ export interface ServiceData {
         
         <p>We design game rooms that address the specific requirements of different gaming platforms and styles, from PC and console gaming to virtual reality experiences. Our solutions incorporate ergonomic considerations, proper cable management, and aesthetic elements that create an engaging gaming environment.</p>
       `,
-      image: "/home-cinema/game/ga.avif",
-      heroBackground: "/home-cinema/game/ga-hero.webp",
+      image: "/Home-cinema/game/ga.avif",
+      heroBackground: "/Home-cinema/game/ga-hero.webp",
       features: [
         "Low-latency gaming displays",
         "Immersive surround sound",
