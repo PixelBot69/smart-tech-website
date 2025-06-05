@@ -315,7 +315,7 @@ const SmartHomeServices: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-emerald-700 mb-4">Our Comprehensive Services</h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            At Smart Matrix, we provide end-to-end smart home and building solutions designed to enhance comfort, 
+            At GM Automation, we provide end-to-end smart home and building solutions designed to enhance comfort, 
             security, and efficiency. Our expert team delivers cutting-edge technology tailored to your specific needs.
           </p>
         </div>
