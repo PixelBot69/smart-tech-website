@@ -174,15 +174,7 @@ export default function TestimonialsSection() {
               </p>
               
               <div className="flex items-center gap-4 pt-6 border-t border-zinc-800">
-                <div className="w-12 h-12 rounded-full bg-zinc-800 border border-zinc-700 overflow-hidden">
-                  <Image
-                    src={testimonials[activeIndex].avatar}
-                    alt={testimonials[activeIndex].name}
-                    width={48}
-                    height={48}
-                    className="object-cover"
-                  />
-                </div>
+               
                 <div>
                   <h4 className="font-medium text-white">{testimonials[activeIndex].name}</h4>
                   <p className="text-sm text-zinc-400">{testimonials[activeIndex].title}</p>
@@ -256,7 +248,7 @@ export default function TestimonialsSection() {
             </blockquote>
             
             <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-zinc-800 border border-zinc-700"></div>
+             
               <div className="text-left">
                 <h4 className="text-lg font-medium text-white">Featured Client</h4>
                 <p className="text-zinc-400">Technology Director</p>

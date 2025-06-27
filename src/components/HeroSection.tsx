@@ -163,17 +163,14 @@ const HeroSlider: React.FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                           
-                      
-                          <Button 
-                            variant="outline" 
-                            size="lg" 
-                            className="border-zinc-600 text-black hover:bg-zinc-800 hover:text-white px-8 py-4 rounded-full font-medium backdrop-blur-sm"
-                          >
-                              Book a Demo
+                            <Button 
+                              size="lg" 
+                              className="bg-white text-black hover:bg-zinc-200 font-medium px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-white/20"
+                            >
+                              Book Demo <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
-                       
-                              </a>
+                          </a>
+                    
                         </div>
                       </div>
                       
@@ -269,9 +266,9 @@ const HeroSlider: React.FC = () => {
           ))}
         </div>
 
-        {/* Minimal Navigation Arrows */}
-        <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
-        <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
+        {/* Minimal Navigation Arrows - Hidden on mobile */}
+        <CarouselPrevious className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
+        <CarouselNext className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
       </Carousel>
 
       {/* Bottom Fade */}

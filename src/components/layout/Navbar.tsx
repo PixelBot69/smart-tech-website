@@ -15,13 +15,14 @@ import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 
 const Logo = () => (
-  <div className="flex items-center space-x-2">
-    <div className="relative w-8 h-8 bg-emerald-500 rounded-md flex items-center justify-center">
-    <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
-
+  <div className="flex items-center space-x-3">
+    <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg">
+      <img src="/logo.png" alt="Logo" className="h-6 w-auto" />
     </div>
-    <span className="text-lg font-bold"> GM AUTOMATION &
-    SOLUTION</span>
+    <div className="flex flex-col">
+      <span className="text-lg font-light text-zinc-900 tracking-tight">GM AUTOMATION</span>
+      <span className="text-xs text-zinc-600 font-medium tracking-wider">& SOLUTION</span>
+    </div>
   </div>
 );
 

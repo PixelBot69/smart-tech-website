@@ -36,10 +36,12 @@ const Footer = () => {
       href: "/home-cinema",
       accent: "purple",
       links: [
-        { name: "Acoustic Rooms", href: "/home-cinema/acoustic-rooms" },
-        { name: "LED Walls/Screens", href: "/home-cinema/led-walls-screens" },
-        { name: "Cinema Audio/Video", href: "/home-cinema/cinema-audio-video" },
-        { name: "Cinema Automation", href: "/home-cinema/cinema-automation" }
+       { name: "Acoustic Rooms", href: "/Home-cinema/acoutic" },
+        { name: "LED Walls/Screens", href: "/Home-cinema/Led-wall" },
+        { name: "Cinema Audio/Video", href: "/Home-cinema/cinema-audio" },
+        { name: "Cinema Automation", href: "/Home-cinema/Cinema-automation" },
+        { name: "Cinema Seating", href: "/Home-cinema/cinema-seating" },
+        { name: "Game Rooms", href: "/Home-cinema/game" }
       ]
     },
     {

@@ -598,13 +598,7 @@ export default async function ServicePage({ params, searchParams }: ServicePageP
                   Start Your Project <ArrowRightCircle className="ml-3 h-6 w-6" />
                 </Button>
               </a>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-zinc-600 text-black hover:bg-zinc-800 hover:text-white px-10 py-4 rounded-full font-medium backdrop-blur-sm text-lg"
-              >
-                Schedule Consultation
-              </Button>
+      
             </div>
           </div>
         </div>
