@@ -9,57 +9,65 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
-import { Home, Lightbulb, Wifi, Shield, Activity } from 'lucide-react';
+import { Home, Lightbulb, Wifi, Shield, Activity, ArrowRight } from 'lucide-react';
 
 interface Slide {
   title: string;
   description: string;
   image: string;
   alt: string;
+  category: string;
 }
 
 const slides: Slide[] = [
   {
-    title: 'Smart Home Control Center',
+    title: 'Smart Home Control',
     description: 'Manage your entire home from a single dashboard. From lighting to locks, enjoy seamless control and automation.',
     image: '/home.jpg',
     alt: 'Modern smart home control interface',
+    category: 'Home Automation',
   },
   {
-    title: 'Cinematic Smart TV Experience',
+    title: 'Cinematic Experience',
     description: 'Bring the theater to your living room with smart lighting, synced audio, and automated ambience adjustments.',
     image: '/tv.webp',
     alt: 'Smart TV setup with automated lights and sound',
+    category: 'Entertainment',
   },
   {
-    title: 'Structured Cabling Solutions',
+    title: 'Structured Cabling',
     description: 'Ensure high-speed connectivity and efficient data management with professionally installed structured cabling systems.',
     image: '/Structure-Cabling.jpg',
     alt: 'Structured cabling installation in a modern setup',
+    category: 'Infrastructure',
   },
   {
-    title: 'CCTV Surveillance Systems',
+    title: 'CCTV Surveillance',
     description: 'Protect your property with advanced CCTV systems offering high-resolution video, night vision, and remote monitoring.',
     image: '/cctv.jpg',
     alt: 'CCTV surveillance camera setup',
+    category: 'Security',
   },
   {
-    title: 'Access Control Systems',
+    title: 'Access Control',
     description: 'Secure your premises with cutting-edge access control, including biometric scanners, RFID, and smart locks.',
     image: '/acess control.jpg',
     alt: 'Biometric and smart lock access control system',
+    category: 'Security',
   },
   {
-    title: 'LED Walls & Display Screens',
+    title: 'LED Display Solutions',
     description: 'Captivate your audience with vibrant LED walls and digital display screens perfect for events, retail, or boardrooms.',
     image: '/led.jpg',
     alt: 'Large LED display screen in a commercial space',
+    category: 'Display',
   },
   {
-    title: 'Immersive Gaming Room Setup',
+    title: 'Gaming Environment',
     description: 'Experience the ultimate gaming ambiance with responsive lighting, surround sound, and real-time environment control.',
     image: '/Gamingroom_tk700sti-A.avif',
     alt: 'High-end smart gaming room setup',
+    category: 'Gaming',
   },
 ];
 
@@ -81,79 +89,161 @@ const HeroSlider: React.FC = () => {
     return () => api.off('select', handleSelect);
   }, [api, handleSelect]);
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!api) return;
+    
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
-    <section className="relative w-full bg-gradient-to-r from-emerald-600 to-teal-800 text-white overflow-hidden">
+    <section className="relative w-full h-screen bg-zinc-950 overflow-hidden">
       <Carousel
         setApi={setApi}
-        className="w-full"
+        className="w-full h-full"
         opts={{ loop: true }}
       >
         <CarouselContent>
           {slides.map((slide, index) => (
-            <CarouselItem key={index} className="relative will-change-transform transform-gpu">
-              <div className="relative h-[600px] sm:h-[700px] md:h-[800px] w-full">
-                <div className="absolute inset-0 bg-black/30 z-10" />
-                <img
-                  src={slide.image}
-                  alt={slide.alt}
-                  className="object-cover w-full h-full"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 z-20 flex items-center justify-center">
-                  <div className="container mx-auto px-4 sm:px-6">
-                    {/* Centered layout structure for both mobile and desktop */}
-                    <div className="flex flex-col md:flex-row items-center justify-center h-full">
-                      {/* Text section - centered on both mobile and desktop */}
-                      <div className="w-full md:w-1/2 bg-emerald-700/60 backdrop-blur-sm p-6 sm:p-8 rounded-lg shadow-lg text-center md:text-left">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{slide.title}</h1>
-                        <p className="text-base sm:text-lg mb-6 sm:mb-8 text-emerald-100">{slide.description}</p>
-                        <a
-  href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button className="bg-white text-emerald-700 hover:bg-emerald-100">
-    Book a Demo
-  </Button>
-</a>
+            <CarouselItem key={index} className="relative h-screen">
+              <div className="relative w-full h-full">
+                {/* Background Image with Overlay */}
+                <div className="absolute inset-0">
+                  <img
+                    src={slide.image}
+                    alt={slide.alt}
+                    className="object-cover w-full h-full"
+                    loading="lazy"
+                  />
+                  {/* Sophisticated Dark Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/90 via-zinc-900/60 to-zinc-900/40"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-transparent to-zinc-900/20"></div>
+                </div>
 
+                {/* Content Container */}
+                <div className="relative z-10 h-full flex items-center">
+                  <div className="container mx-auto px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                      
+                      {/* Left Content */}
+                      <div className="space-y-8 text-white">
+                        <div className="space-y-6">
+                          {/* Category Badge */}
+                          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700/50 bg-zinc-900/50 backdrop-blur-sm">
+                            <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                            <span className="text-zinc-300 text-sm font-medium tracking-wide uppercase">
+                              {slide.category}
+                            </span>
+                          </div>
+                          
+                          {/* Title */}
+                          <h1 className="text-5xl lg:text-6xl font-light tracking-tight leading-tight">
+                            <span className="block text-zinc-100">
+                              {slide.title.split(' ')[0]}
+                            </span>
+                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400 font-thin">
+                              {slide.title.split(' ').slice(1).join(' ')}
+                            </span>
+                          </h1>
+                          
+                          {/* Description */}
+                          <p className="text-xl text-zinc-300 leading-relaxed max-w-lg font-light">
+                            {slide.description}
+                          </p>
+                        </div>
+                        
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4">
+                          <a
+                            href="https://wa.me/919782730455?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                           
+                      
+                          <Button 
+                            variant="outline" 
+                            size="lg" 
+                            className="border-zinc-600 text-black hover:bg-zinc-800 hover:text-white px-8 py-4 rounded-full font-medium backdrop-blur-sm"
+                          >
+                              Book a Demo
+                            </Button>
+                       
+                              </a>
+                        </div>
                       </div>
                       
-                      {/* Visual card - improved visibility on larger screens */}
-                      <div className="hidden md:block md:w-1/2 md:flex md:justify-center md:items-center ml-8">
-                        {current === index && (
-                          <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-2xl border border-white/20 transition-all duration-300 ease-in-out transform hover:scale-105">
-                            <div className="w-full h-64 bg-gradient-to-br from-emerald-500 to-teal-700 rounded-md flex items-center justify-center relative">
+                      {/* Right Side - Minimalist Tech Visualization */}
+                      <div className="hidden lg:flex justify-center items-center">
+                        <div className="relative">
+                          {/* Main Circle */}
+                          <div className="w-80 h-80 rounded-full border border-zinc-700/30 bg-zinc-900/20 backdrop-blur-xl flex items-center justify-center">
+                            
+                            {/* Inner Elements */}
+                            <div className="relative w-64 h-64">
+                              {/* Center Icon */}
                               <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="relative w-48 h-48">
-                                  <Home size={200} className="text-white absolute inset-0" />
-                                  <Lightbulb size={32} className="text-yellow-300 absolute top-8 left-8" />
-                                  <Wifi size={32} className="text-blue-300 absolute top-8 right-8" />
-                                  <Shield size={32} className="text-purple-300 absolute bottom-8 left-8" />
-                                  <Activity size={32} className="text-red-300 absolute bottom-8 right-8" />
-                                  <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="w-24 h-24 border-2 border-white/40 rounded-full animate-pulse"></div>
-                                  </div>
+                                <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                                  <Home className="h-10 w-10 text-white" />
                                 </div>
                               </div>
+                              
+                              {/* Floating Icons */}
+                              <div className="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-emerald-500/20 backdrop-blur-sm flex items-center justify-center animate-pulse">
+                                <Lightbulb className="h-6 w-6 text-emerald-400" />
+                              </div>
+                              
+                              <div className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-sm flex items-center justify-center animate-pulse delay-1000">
+                                <Wifi className="h-6 w-6 text-blue-400" />
+                              </div>
+                              
+                              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-purple-500/20 backdrop-blur-sm flex items-center justify-center animate-pulse delay-2000">
+                                <Shield className="h-6 w-6 text-purple-400" />
+                              </div>
+                              
+                              <div className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-red-500/20 backdrop-blur-sm flex items-center justify-center animate-pulse delay-3000">
+                                <Activity className="h-6 w-6 text-red-400" />
+                              </div>
+                              
+                              {/* Connecting Lines */}
+                              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 256 256">
+                                <g stroke="rgb(113 113 122)" strokeWidth="1" fill="none" opacity="0.3">
+                                  <line x1="128" y1="32" x2="128" y2="96" strokeDasharray="4,4" className="animate-pulse" />
+                                  <line x1="224" y1="128" x2="160" y2="128" strokeDasharray="4,4" className="animate-pulse delay-1000" />
+                                  <line x1="128" y1="224" x2="128" y2="160" strokeDasharray="4,4" className="animate-pulse delay-2000" />
+                                  <line x1="32" y1="128" x2="96" y2="128" strokeDasharray="4,4" className="animate-pulse delay-3000" />
+                                </g>
+                              </svg>
                             </div>
                           </div>
-                        )}
+                          
+                          {/* Outer Ring Animation */}
+                          <div className="absolute inset-0 w-80 h-80 rounded-full border-2 border-emerald-400/20 animate-spin" style={{ animationDuration: '20s' }}></div>
+                        </div>
                       </div>
-                      
-                      {/* Enhanced visual element for mobile - better vertical spacing */}
-                      <div className="md:hidden mt-4">
-                        {current === index && (
-                          <div className="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-lg border border-white/20 inline-flex items-center justify-center">
-                            <div className="flex items-center justify-center gap-2">
-                              <Home size={24} className="text-white" />
-                              <Lightbulb size={20} className="text-yellow-300" />
-                              <Wifi size={20} className="text-blue-300" />
-                              <Shield size={20} className="text-purple-300" />
-                              <Activity size={20} className="text-red-300" />
-                            </div>
-                          </div>
-                        )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Tech Visualization */}
+                <div className="lg:hidden absolute bottom-24 left-1/2 -translate-x-1/2 z-20">
+                  <div className="bg-zinc-900/50 backdrop-blur-xl p-4 rounded-2xl border border-zinc-700/30">
+                    <div className="flex items-center justify-center gap-4">
+                      <div className="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                        <Lightbulb className="h-5 w-5 text-emerald-400" />
+                      </div>
+                      <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <Wifi className="h-5 w-5 text-blue-400" />
+                      </div>
+                      <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center">
+                        <Shield className="h-5 w-5 text-purple-400" />
+                      </div>
+                      <div className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                        <Activity className="h-5 w-5 text-red-400" />
                       </div>
                     </div>
                   </div>
@@ -163,22 +253,29 @@ const HeroSlider: React.FC = () => {
           ))}
         </CarouselContent>
 
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-30">
+        {/* Elegant Navigation Dots */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => api?.scrollTo(index)}
-              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
-                current === index ? 'bg-white' : 'bg-white/50'
+              className={`transition-all duration-300 ${
+                current === index 
+                  ? 'w-8 h-2 bg-white rounded-full' 
+                  : 'w-2 h-2 bg-white/40 hover:bg-white/60 rounded-full'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
 
-        <CarouselPrevious className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/40 text-white z-30 h-8 w-8 sm:h-10 sm:w-10" />
-        <CarouselNext className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/40 text-white z-30 h-8 w-8 sm:h-10 sm:w-10" />
+        {/* Minimal Navigation Arrows */}
+        <CarouselPrevious className="absolute left-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
+        <CarouselNext className="absolute right-6 top-1/2 -translate-y-1/2 bg-zinc-900/50 hover:bg-zinc-800/70 border-zinc-700/50 text-white backdrop-blur-sm z-30 h-12 w-12 rounded-full transition-all duration-300" />
       </Carousel>
+
+      {/* Bottom Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-zinc-950 to-transparent z-10"></div>
     </section>
   );
 };

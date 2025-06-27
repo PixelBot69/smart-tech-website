@@ -2,6 +2,8 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import '@/styles/globals.css';
+import FloatingSocialDock from '@/components/floating';
+import TidioWidget from '@/components/TidioWidget';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -40,6 +42,8 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />
+        <FloatingSocialDock />
+           <TidioWidget />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
 interface Associate {
   id: number;
@@ -35,70 +36,125 @@ export default function AssociatesSection() {
   ];
 
   return (
-    <section className="w-full py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-16">
-          {/* Solutions Column */}
-          <div>
-            <div className="relative mb-8">
-              {/* Green accent line above heading */}
-              <div className="absolute top-0 left-0 transform -translate-y-6">
-                <div className="h-1 w-16 bg-green-500"></div>
+    <section className="py-24 bg-zinc-50">
+      <div className="container mx-auto px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-zinc-200 mb-6">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span className="text-zinc-600 text-sm font-medium tracking-wide uppercase">Technology Partners</span>
+          </div>
+          
+          <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-zinc-900 mb-6 leading-tight">
+            Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-blue-500 font-thin">Partnerships</span>
+          </h2>
+          
+          <div className="w-16 h-px bg-gradient-to-r from-emerald-500 to-blue-500 mx-auto mb-6"></div>
+          
+          <p className="text-xl text-zinc-600 max-w-3xl mx-auto leading-relaxed font-light">
+            We collaborate with industry-leading technology providers to deliver cutting-edge solutions and ensure the highest quality standards.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-20">
+          
+          {/* Solutions Section */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                <span className="text-zinc-500 text-sm font-medium tracking-widest uppercase">Technology Solutions</span>
               </div>
-              <h2 className="text-4xl font-bold text-black">Solutions</h2>
+              
+              <h3 className="text-3xl font-light text-zinc-900 leading-tight">
+                Smart <span className="text-emerald-600 font-normal">Protocols</span>
+              </h3>
+              
+              <div className="w-12 h-px bg-emerald-500"></div>
+              
+              <p className="text-zinc-600 leading-relaxed font-light">
+                Advanced communication protocols and wireless technologies that power our smart home ecosystem.
+              </p>
             </div>
             
+            {/* Solutions Grid */}
             <div className="grid grid-cols-3 gap-4">
               {solutions.map((solution) => (
-                <div key={solution.id} className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-24">
-                  <Image 
-                    src={solution.logo} 
-                    alt={solution.name} 
-                    width={120} 
-                    height={60}
-                    className="object-contain"
-                  />
+                <div 
+                  key={solution.id} 
+                  className="group bg-white rounded-2xl p-6 border border-zinc-200 hover:border-zinc-300 hover:shadow-lg transition-all duration-300 flex items-center justify-center h-24"
+                >
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <Image
+                      src={solution.logo}
+                      alt={solution.name}
+                      width={80}
+                      height={40}
+                      className="object-contain max-w-full max-h-full filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-          
-          {/* Associates Column */}
-          <div>
-            <div className="relative mb-8">
-              {/* Green accent line above heading */}
-              <div className="absolute top-0 left-0 transform -translate-y-6">
-                <div className="h-1 w-16 bg-green-500"></div>
+
+          {/* Associates Section */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                <span className="text-zinc-500 text-sm font-medium tracking-widest uppercase">Brand Partners</span>
               </div>
-              <h2 className="text-4xl font-bold text-black">Associates</h2>
+              
+              <h3 className="text-3xl font-light text-zinc-900 leading-tight">
+                Industry <span className="text-blue-600 font-normal">Leaders</span>
+              </h3>
+              
+              <div className="w-12 h-px bg-blue-500"></div>
+              
+              <p className="text-zinc-600 leading-relaxed font-light">
+                Partnering with world-renowned brands to deliver premium automation and control solutions.
+              </p>
             </div>
             
+            {/* Associates Grid */}
             <div className="grid grid-cols-3 gap-4">
               {associates.map((associate) => (
-                <div key={associate.id} className="bg-white rounded-lg p-4 shadow-sm flex items-center justify-center h-24">
-                  <Image 
-                    src={associate.logo} 
-                    alt={associate.name} 
-                    width={120} 
-                    height={60}
-                    className="object-contain"
-                  />
+                <div 
+                  key={associate.id} 
+                  className="group bg-white rounded-2xl p-6 border border-zinc-200 hover:border-zinc-300 hover:shadow-lg transition-all duration-300 flex items-center justify-center h-24"
+                >
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <Image
+                      src={associate.logo}
+                      alt={associate.name}
+                      width={100}
+                      height={50}
+                      className="object-contain max-w-full max-h-full filter grayscale group-hover:grayscale-0 transition-all duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        
-        <div className="flex justify-center mt-12">
-          <a 
-            href="#" 
-            className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition-colors"
-          >
-            Discover More
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-20">
+          <div className="space-y-6">
+            <p className="text-lg text-zinc-600 font-light">
+              Interested in learning more about our technology partnerships?
+            </p>
+            
+            <a
+              href="#"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-zinc-900 text-white font-medium rounded-full hover:bg-zinc-800 transition-all duration-300 group shadow-lg hover:shadow-xl"
+            >
+              <span>Discover Our Solutions</span>
+              <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
