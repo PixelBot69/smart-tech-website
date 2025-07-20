@@ -119,6 +119,12 @@ const NavbarComponent = () => {
         { title: "Internet of Things (IoT)", href: "/bms/internet-of-things" }
       ]
     },
+    {
+      title: "LED Wall",
+      href: "https://led-wall.vercel.app/",
+  
+    },
+   
     { title: "About Us", href: "/about",
         submenu:[{ title: "Contact", href: "/contact" },
           { title: "About Us", href: "/about" }
